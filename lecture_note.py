@@ -50,3 +50,14 @@
 # print("good" in greeting)     #sub sequent ayittanu check cheyyuka
 # print("hey" in greeting)
 
+# check whether the give number is odd or even
+
+input = int(input("Enter the number to check: "))
+if input % 2 == 0 :
+    print("the number ",input, " is even number")
+else:
+    print("The number ",input," is odd number")
+
+name = "shuhaib"
+age = 24
+print(f"My name is {name} and my age is {age}")      #printing formate 
