@@ -130,10 +130,10 @@
 # for 
 
 # for i in range(start,end,increment)
-for i in range(1,10,1):
-    for j in range(1,i,1):
-        print("*",end=" ")
-    print()
+# for i in range(1,10): #by default incremented by 1
+#     for j in range(1,i): #by default incremented by 1
+#         print("*",end=" ")
+#     print()
 # o/p 
 
 # * 
@@ -144,3 +144,82 @@ for i in range(1,10,1):
 # * * * * * *
 # * * * * * * *
 # * * * * * * * *
+
+# for i in range(6):
+#     for k in range(5):
+#         print(k+1,end=" ")           
+#     print()
+
+#  o/p
+# 1 2 3 4 5 
+# 1 2 3 4 5 
+# 1 2 3 4 5
+# 1 2 3 4 5
+# 1 2 3 4 5
+# 1 2 3 4 5
+
+# for i in range(5):
+#     for k in range(5):
+#         print(i,end=" ")
+#     print()
+
+# o/p
+# 0 0 0 0 0 
+# 1 1 1 1 1 
+# 2 2 2 2 2
+# 3 3 3 3 3
+# 4 4 4 4 4
+
+# number = int(input("Enter the number: "))
+# for j in range(1,11):
+#     result = j*number
+#     print(f"{j} X {number} = {result}")
+
+
+    # 1 * 10 = 10
+    # 2 * 10 = 20
+
+# for i in range(1,100):
+#     if i % 2 == 0:
+#         print(i)
+
+# sum=0
+# for i in range(101):
+#     sum += i
+# print(sum)    #5050
+
+#factorial of a number
+# n=int(input("Enter the number: ")) #5
+# fact = 1
+# for i in range(1,n+1):
+#     fact *= i                        #fact = 1*2*3*4*5
+# print(fact) 
+
+
+''' for loop using because we knows the end/range '''
+
+
+# n = int(input("Enter the number: "))
+# count = 0
+# while n>0:
+#     n = n//10
+#     count+=1
+# print(count)
+
+# o/p
+# Enter the number: 156845
+# 6
+
+#reverse of a number also find pallindrome
+rev = 0
+n = 152
+p = n
+while n>0:
+    rem = n%10
+    rev = rev*10+rem
+    n = n//10
+print("riverse is ",rev)
+if rev==p:
+    print("it is pallindrome")
+else:
+    print("not pallindrome")
