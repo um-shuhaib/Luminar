@@ -130,6 +130,7 @@
 # for 
 
 # for i in range(start,end,increment)
+
 # for i in range(1,10): #by default incremented by 1
 #     for j in range(1,i): #by default incremented by 1
 #         print("*",end=" ")
@@ -226,12 +227,162 @@
 
 # For BOTH NUMBER AND STRING
 
-string = input('enter the somthing: ')
-rev_sring = string[::-1]
-print(rev_sring)
-if string == rev_sring:
-    print("pallindrome")
-else:
-    print("not pallindrome")
+# string = input('enter the somthing: ')
+# rev_sring = string[::-1]
+# print(rev_sring)
+# if string == rev_sring:
+#     print("pallindrome")
+# else:
+#     print("not pallindrome")
 
+
+# for row in range(6):
+#     for col in range(0,row):
+#         print("*",end=" ")
+#     print()
+
+# o/p
+
+# * 
+# * *
+# * * *
+# * * * *
+# * * * * *
+
+# for row in range(6):
+#     for col in range(6,row,-1):
+#         print("*",end=" ")
+#     print()
+
+# o/p 
+# * * * * * * 
+# * * * * * 
+# * * * *
+# * * *
+# * *
+# *
+
+# n=10
+# for raw in range(n):
+#     for col in range(n-raw):    
+#         print(" ",end=" ")
+#     for sec_col in range(raw):
+#         print("*",end=" ")
+#     print()
+
+    # o/p 
+    
+#           * 
+#         * *
+#       * * *
+#     * * * *
+#   * * * * *
+
+
+# for raw in range(6):
+#     if raw==0 or raw==5:
+#         for col in range(6):
+#             print("*",end=" ")
+
+#     else:
+#         print("*",end=" ")
+#         for col in range(4):
+#             print(" ",end=" ")
+#         print("*",end=" ")
+#     print()
+
+#o/p
+# * * * * * * 
+# *         * 
+# *         *
+# *         *
+# *         *
+# * * * * * *
+
+#or
+
+# for raw in range(6):
+#     for col in range(6):
+#         if raw==0 or raw==5 or col==0 or col==5:
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
+
+    # o/p 
+# * * * * * * 
+# *         * 
+# *         *
+# *         *
+# *         *
+# * * * * * *
+
+# for raw in range(5):
+#     for col in range(5):
+#         if col==0 or raw==4:
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
+
+    # o/p 
+# *
+# *
+# *
+# *
+# * * * * *
+
+# for raw in range(5):
+#     for col in range(5):
+#         # if (raw==0 and col!=0 and col!=4)or (raw==4 and col!=0 and col!=4)or (col==0 and raw!=0 and raw!=4)or (col==4 and raw!=0 and raw!=4):
+#         if (raw==0 or raw==4) and (col!=0 and col!=4) or (col==0 or col==4)and (raw!=0 and raw!=4):
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
+
+# o/p 
+
+#   * * *   
+# *       * 
+# *       *
+# *       *
+#   * * *
+
+
+for raw in range(6):
+    for col in range(6):
+        if (raw==0 and col!=0 and col!=5 ) or (col==0 or col==5)and raw!=0 or (raw==3):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+print()
+# o/p
+#   * * * *   
+# *         * 
+# *         *
+# * * * * * *
+# *         *
+# *         *
+
+
+
+for raw in range(6):
+    for col in range(6):
+        if (raw==0 or raw==5) and col!=5 or (col==0 or col==5)and (raw!=0 and raw!=5):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+# o/p
+
+# * * * *  
+# *       *
+# *       *
+# *       *
+# *       * 
+# * * * * 
 
