@@ -210,16 +210,28 @@
 # Enter the number: 156845
 # 6
 
-#reverse of a number also find pallindrome
-rev = 0
-n = 152
-p = n
-while n>0:
-    rem = n%10
-    rev = rev*10+rem
-    n = n//10
-print("riverse is ",rev)
-if rev==p:
-    print("it is pallindrome")
+#reverse of a number also find pallindrome   for NUMBERS
+# n = int(input("Enter the Number: "))
+# rev = 0
+# p = n
+# while n>0:
+#     rem = n%10
+#     rev = rev*10+rem
+#     n = n//10
+# print("riverse is ",rev)
+# if rev==p:
+#     print("it is pallindrome")
+# else:
+#     print("not pallindrome")
+
+# For BOTH NUMBER AND STRING
+
+string = input('enter the somthing: ')
+rev_sring = string[::-1]
+print(rev_sring)
+if string == rev_sring:
+    print("pallindrome")
 else:
     print("not pallindrome")
+
+
