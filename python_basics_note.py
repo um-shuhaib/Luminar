@@ -588,7 +588,7 @@
 
                        # string methods
 
-s = " Good morning "
+# s = " Good morning "
                             # print(s.upper())                       # .upper()   to upper case
                             # print(s.lower())                       # .lower()   To lower case
                             # print(s.title())                       # .title() change every first letter to UPPER CASE
@@ -602,3 +602,73 @@ s = " Good morning "
                                 # print(len(s.rstrip()))      # .rstrip()   For removing last blank Spaces
 
 
+                                            # splittind
+
+
+# s = " Good,morning "
+
+# print(s.split())              # .split()       space vach split cheyyunnu
+# print(s.split(","))           # .split(",")                 , vach split cheythu
+
+
+                                               # replace
+
+
+# s = " Good morning "
+
+                # print(s.replace("Good","happy"))           # .replace("cheyyandathu,cheyyunnadhu")
+                # print(s.replace("o","*",1))                # .replace("cheyyandathu,cheyyunnadhu", no. of occarance) #1st one only op=g*od 
+                # print(s.replace("o","*",2))                # .replace("cheyyandathu,cheyyunnadhu",no. of occarance)  #1st two only op=g**d
+
+
+                                    # .ljust()
+
+# s = "Good morning"
+
+# print(s.ljust(10,"*"))          #good left lu bakki fill cheyyunnadhu right side lu  #.ljust(etra count koottanam, ndhu vach fill cheyyanam)
+# print(s.rjust(10,"*"))   
+# print(s.center(10,"*"))   
+
+# op
+
+# Good******
+# ******Good
+# ***Good***
+
+# s = "Good morning"
+# h = "12345"
+# b = 12354
+# # print(s.startswith("G"))  # true                    .startwith()
+# # print(s.startswith("m"))  # false                   .endwith()
+# # print(s.endswith("m"))  # false
+# # print(s.endswith("G"))  # false
+# # print(s.endswith("g"))  # true
+
+
+# print(s.isnumeric()) #false             .isnumeric(), .isalpha(), .isalnum()
+# print(h.isnumeric()) # true
+# # print(b.isnumeric())         # ERROR not a string
+# print(s.isalpha())
+# print(s.isalnum())
+# print(s.isspace())
+
+
+s= "abc @123"
+alpha=0
+number=0
+special=0
+space=0
+for i in s:
+    if i.isnumeric():
+        number+=1
+    elif i.isalpha():
+        alpha+=1
+    elif i.isspace():
+        space+=1
+    else:
+        special+=1
+print("letters:",alpha," numbers: ",number," spaces: ",space," special: ",special)
+
+# op
+
+# letters: 3  numbers:  3  spaces:  1  special:  1
