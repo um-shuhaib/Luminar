@@ -13,11 +13,15 @@
 
 # mutable and immutable - related to modification
 
+
+#int(), float(), str(), bool(), tuple(), list(), set() - coversion methods
+
+
 # a = 5
 # b = 5
 # c = a + b 
 # print(c) 
-# a = int(input("Enter First number: "))              #int(), float(), str(), bool(), tuple(), list(), set() - coversion methods
+# a = int(input("Enter First number: "))               
 # b = int(input("Enter Second number: "))
 # c = a + b 
 # print("The Sum is : ",c) 
@@ -197,7 +201,7 @@
 # print(fact) 
 
 
-''' for loop using because we knows the end/range '''
+                                        # for loop using because we knows the end/range
 
 
 # n = int(input("Enter the number: "))
@@ -350,32 +354,30 @@
 #   * * *
 
 
-for raw in range(6):
-    for col in range(6):
-        if (raw==0 and col!=0 and col!=5 ) or (col==0 or col==5)and raw!=0 or (raw==3):
-            print("*",end=" ")
-        else:
-            print(" ",end=" ")
-    print()
+# for raw in range(6):
+#     for col in range(6):
+#         if (raw==0 and col!=0 and col!=5 ) or (col==0 or col==5)and raw!=0 or (raw==3):
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
 
-print()
-# o/p
-#   * * * *   
-# *         * 
-# *         *
-# * * * * * *
-# *         *
-# *         *
+# #o/p
 
+# #   * * * *   
+# # *         * 
+# # *         *
+# # * * * * * *
+# # *         *
+# # *         *
 
-
-for raw in range(6):
-    for col in range(6):
-        if (raw==0 or raw==5) and col!=5 or (col==0 or col==5)and (raw!=0 and raw!=5):
-            print("*",end=" ")
-        else:
-            print(" ",end=" ")
-    print()
+# for raw in range(6):
+#     for col in range(6):
+#         if (raw==0 or raw==5) and col!=5 or (col==0 or col==5)and (raw!=0 and raw!=5):
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
 
 # o/p
 
@@ -385,4 +387,177 @@ for raw in range(6):
 # *       *
 # *       * 
 # * * * * 
+
+# square of the list element
+
+# number = [10,11,12,13,14,15]
+# for i in number:
+#     print(i**2)
+
+    #o/p
+
+# 100
+# 121
+# 144
+# 169
+# 196
+# 225
+
+# Total sum of the list
+
+# number = [10,11,12,13,14,15]
+# sum = 0
+# for i in number:
+#     sum += i
+# print(sum)
+
+#o/p
+# 75
+
+# Largest number in a list
+
+# number = [10,11,12,13,14,15]
+# large = 0
+# for i in number:
+#     for j in number:
+#         if i<j:
+#             large = j
+# print(large)
+
+# o/p
+#15
+
+
+# number = [10,11,12,13,14,15]
+# large = 0
+# for i in number:
+#     if large < i:
+#         large=i
+# print(large)
+
+# # o/p                     OR
+# # 15
+
+# number = [10,11,12,13,14,15]
+# print(sum(number))                            # BUILD IN FUNCTION
+# print(max(number))                            # BUILD IN FUNCTION
+# print(min(number))                            # BUILD IN FUNCTION
+
+
+
+                            # LOOP CONTROLLING STTATEMENT
+                            # break, continue, pass                          pass for empty statement
+
+# number = [10,11,12,13,14,15]
+# for i in number:
+#     if i % 5 ==0:
+#         break
+#     else:
+#         print(i)
+
+# # o/p
+# # nothing
+
+# number = [10,11,12,13,14,15]
+# for i in number:
+#     if i % 5 ==0:
+#         continue
+#     else:
+#         print(i)
+
+# # o/p
+# # 11
+# # 12
+# # 13
+# # 14
+# number = [10,11,12,13,14,15]
+# for i in number:
+#     if i % 5 ==0:
+#         pass                       # 5 STAR DO NOTHING
+#     else:
+#         print(i)
+
+# # o/p
+# # 11
+# # 12
+# 13
+# 14
+
+
+# number = 100
+# while True:
+#     guess = int(input("Enter the guess: "))
+#     if number < guess:
+#         print("The guess is Greater than the number. Please guess again: ")
+#     elif number > guess:
+#         print("The guess is smaller than the number. Please guess again: ")
+#     else:
+#         print("Congrats ! YOU ARE CURRECT ")
+#         break
+
+                                        # camelCase in js
+                                        # Pascalcase in python for class
+                                        # snake_case in python for variable and function
+
+
+# o/p 
+
+# Enter the guess: 52
+# The guess is smaller than the number. Please guess again: 
+# Enter the guess: 187
+# The guess is Greater than the number. Please guess again: 
+# Enter the guess: 100
+# Congrats ! YOU ARE CURRECT 
+
+# n=1
+# for raw in range(6):
+#     for col in range(raw):
+#         print(n,end=" ")
+#         n+=1
+    
+#     print()
+
+    #   o/p 
+# 1 
+# 2 3
+# 4 5 6
+# 7 8 9 10
+# 11 12 13 14 15  
+
+# k = 0
+# for raw in range(5):
+#     for col in range(5-raw):
+#         print(5-k,end=" ")
+#         k+=1
+#     k=0
+#     print()
+
+#     o/p 
+
+# 5 4 3 2 1 
+# 5 4 3 2 
+# 5 4 3
+# 5 4
+# 5
+
+# for i in range(5):
+#     for j in range(5,i,-1):
+#         print(j,end=" ")
+#     print()
+
+#     o/p 
+
+# 5 4 3 2 1 
+# 5 4 3 2 
+# 5 4 3
+# 5 4
+# 5
+
+                                    #DATA TYPES
+# 1 - MUTABLE and INMUTABLE
+
+# list, set, dictionary  - mutable
+# int, float, char ...   - inmutable
+
+# string is itrable and indexing
 
