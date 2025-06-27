@@ -571,14 +571,34 @@
 # s[::]  fuill
 # s[::-1] reverse
 
-s = "Good Morning"
-print(s[::])
-print(s[::-1])              # string reverse
+# s = "Good Morning"
+# print(s[::])
+# print(s[::-1])              # string reverse
 
-# length
+# # length
 
-# len(s)         # lenght of a string
+# # len(s)         # lenght of a string
 
-print(len(s))
-print(s[::2])    #skips one
+# print(len(s))
+# print(s[::2])    #skips one
+# print(s[:])                                     
+
+#                                  # string      -      slicing, inmutable, indexing
+
+
+                       # string methods
+
+s = " Good morning "
+                            # print(s.upper())                       # .upper()   to upper case
+                            # print(s.lower())                       # .lower()   To lower case
+                            # print(s.title())                       # .title() change every first letter to UPPER CASE
+                            # print(s.capitalize())                  # .capitalize() change only first letter to CAPITAL LETTER
+
+                                # print(s.isupper())          # .isupper()    check full letters are in UPPER CASE or NOT
+                                # print(s.islower())          # .islower()    check full letters are in LOWER CASE
+                                # print(len(s))               # .len()
+                                # print(len(s.strip()))       # .strip()    For removing first and last blank spaces
+                                # print(len(s.lstrip()))      # .lstrip()    for removing first blank spaces
+                                # print(len(s.rstrip()))      # .rstrip()   For removing last blank Spaces
+
 
