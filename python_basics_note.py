@@ -553,11 +553,32 @@
 # 5 4
 # 5
 
-                                    #DATA TYPES
+                                                 #DATA TYPES
+
+
 # 1 - MUTABLE and INMUTABLE
 
 # list, set, dictionary  - mutable
 # int, float, char ...   - inmutable
 
 # string is itrable and indexing
+
+                                             # slicing
+
+                                          # print(s[start,end,step]) 
+
+
+# s[::]  fuill
+# s[::-1] reverse
+
+s = "Good Morning"
+print(s[::])
+print(s[::-1])              # string reverse
+
+# length
+
+# len(s)         # lenght of a string
+
+print(len(s))
+print(s[::2])    #skips one
 
