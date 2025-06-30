@@ -613,6 +613,8 @@
 
                                                # replace
 
+                                     #   .replace(from,to,count)
+
 
 # s = " Good morning "
 
@@ -653,22 +655,118 @@
 # print(s.isspace())
 
 
-s= "abc @123"
-alpha=0
-number=0
-special=0
-space=0
-for i in s:
-    if i.isnumeric():
-        number+=1
-    elif i.isalpha():
-        alpha+=1
-    elif i.isspace():
-        space+=1
-    else:
-        special+=1
-print("letters:",alpha," numbers: ",number," spaces: ",space," special: ",special)
+# s= "abc @123"
+# alpha=0
+# number=0
+# special=0
+# space=0
+# for i in s:
+#     if i.isnumeric():
+#         number+=1
+#     elif i.isalpha():
+#         alpha+=1
+#     elif i.isspace():
+#         space+=1
+#     else:
+#         special+=1
+# print("letters:",alpha," numbers: ",number," spaces: ",space," special: ",special)
 
 # op
 
 # letters: 3  numbers:  3  spaces:  1  special:  1
+
+                                                      # Indexing
+
+# .index()    returns the index position
+# if not exist then we ll get an Error 
+
+
+# s = "Good morning"
+
+# print(s.index("r"))
+ 
+                                                                    # .find()
+
+# print(s.find("j"))                                                 # -1 if not exist
+
+                                                                   # .rfind()    #start with right side
+
+# print(s.rfind("o"))
+
+# print(s.find("o"))
+
+
+#                                                                # .count()      # to find the count
+
+# print(s.count("o"))
+
+#                                                               # delete -    # del s
+
+# del s
+# print(s)
+
+
+# replace all first letter to * but not the first one
+
+# s = "python programming"
+# a = s[0]
+# print(s[0]+s[1:].replace(a,"*"))
+
+# op 
+# python *rogramming
+
+
+# if the s have >3 letters and no "ing" in the end then add "ing". if it has tthen add "ly". if not min 3 letters then print the same.
+
+# s = input("Enter the string: ")
+# if len(s)>=3:
+#     if s.endswith("ing"):
+#         print(s+"ly")
+#     else:
+#         print(s+"ing")
+# else:
+#     print(s)
+
+# op
+
+# Enter the string: ikng
+# iknging
+
+# Enter the string: man
+# maning
+
+# Enter the string: ing
+# ingly
+
+# Enter the string: in
+# in
+
+
+
+
+# item = input("Enter the item: ")
+# price = float(input(" Enter the price: "))
+# night = int(input("over night (if yea = 0 , if no = 1): "))
+
+# if night == 0:
+#     if price >= 10:
+#         print(f"Invoice: \n{item} : {price}\nshipping : {8}\nTotal : {price + 8}")
+#     else:
+#         print(f"Invoice: \n{item} : {price}\nshipping : {7}\nTotal : {price + 7}")
+# elif night == 1:
+#     if price >= 10:
+#         print(f"Invoice: \n{item} : {price}\nshipping : {3}\nTotal : {price + 3}")
+#     else:
+#         print(f"Invoice: \n{item} : {price}\nshipping : {2}\nTotal : {price + 2}")
+
+                                         #or
+item = input("Enter the item: ")
+price = float(input(" Enter the price: "))
+choice = int(input("over night (if yea = 0 , if no = 1): "))
+night = 0
+shipping = 2
+if price > 10:
+    shipping = 3
+if choice == 0:
+    night = 5
+print(f"invoice: \n{item} : {price}\nshipping : {shipping+night}\ntotal : {price+shipping+night}") 
