@@ -759,14 +759,88 @@
 #     else:
 #         print(f"Invoice: \n{item} : {price}\nshipping : {2}\nTotal : {price + 2}")
 
-                                         #or
-item = input("Enter the item: ")
-price = float(input(" Enter the price: "))
-choice = int(input("over night (if yea = 0 , if no = 1): "))
-night = 0
-shipping = 2
-if price > 10:
-    shipping = 3
-if choice == 0:
-    night = 5
-print(f"invoice: \n{item} : {price}\nshipping : {shipping+night}\ntotal : {price+shipping+night}") 
+#                                          #or
+# item = input("Enter the item: ")
+# price = float(input(" Enter the price: "))
+# choice = int(input("over night (if yea = 0 , if no = 1): "))
+# night = 0
+# shipping = 2
+# if price > 10:
+#     shipping = 3
+# if choice == 0:
+#     night = 5
+# print(f"invoice: \n{item} : {price}\nshipping : {shipping+night}\ntotal : {price+shipping+night}") 
+
+
+
+
+
+                                                              # list
+
+#s = ["hi","hello",12,True]
+# s = [100,101,102,103,"python programmming"]
+
+#print(s[0])
+#print(s[1:3])
+
+# slicing of list
+
+#print(s[-1][0:6])   # s[select the element][slicing range]
+
+                                                                    # we can modify list
+                                                                    # duplicate items 
+# s[0]=200
+# print(s)
+
+                                                 # list methods
+
+
+# numbers = [10,20,30,40,50]
+
+                                               # append() - single value to the end of the list
+                                               #  extend() - multiple values iterate cheythit # "python" to "p","y","t" .. ,"n" {only iterable values}
+                                                            # at the end 
+                                               #  insert() - with position we can add one item data
+                                                            # insert(pos,value)
+
+# numbers.append(600)
+# print(numbers)
+# numbers.extend("hello")
+# numbers.extend(["python"])
+
+# op 
+# [10, 20, 30, 40, 50, 600, 'h', 'e', 'l', 'l', 'o', 'python']
+# numbers.insert(2,"second")
+# print(numbers)
+
+# op 
+# [10, 20, 'second', 30, 40, 50, 600, 'h', 'e', 'l', 'l', 'o', 'python']
+
+# l =[]
+# l2 = list()    empty
+
+
+
+# a list then seperate odd even numbers list 
+
+
+numbers = [10,11,12,13,14,15,16,17]
+odd = []
+even = []
+for i in numbers:
+    if i % 2 == 0:
+        even.append(i)
+    else:
+        odd.append(i)
+print("odd: ",odd)
+print("even: ",even)
+
+# op
+# odd:  [11, 13, 15, 17]
+# even:  [10, 12, 14, 16]
+
+
+
+
+
+
