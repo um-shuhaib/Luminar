@@ -824,20 +824,75 @@
 # a list then seperate odd even numbers list 
 
 
-numbers = [10,11,12,13,14,15,16,17]
-odd = []
-even = []
-for i in numbers:
-    if i % 2 == 0:
-        even.append(i)
-    else:
-        odd.append(i)
-print("odd: ",odd)
-print("even: ",even)
+# numbers = [10,11,12,13,14,15,16,17]
+# odd = []
+# even = []
+# for i in numbers:
+#     if i % 2 == 0:
+#         even.append(i)
+#     else:
+#         odd.append(i)
+# print("odd: ",odd)
+# print("even: ",even)
 
 # op
 # odd:  [11, 13, 15, 17]
 # even:  [10, 12, 14, 16]
+
+                                                               # pop()
+
+# numbers = [10,11,12,13,14,15,16,17,"python"]
+
+# # numbers.pop()         # last index
+# # numbers.pop(0)         # last index
+# # numbers.pop(-1)         # last index
+
+# print(numbers)
+
+#                                                                # remove()
+
+# numbers.remove("python")
+# print(numbers)
+
+#                                                                # del
+                
+# del numbers[1]
+# print(numbers)
+
+
+# num = int(input("Enter the number: "))
+# l = [10,20,30,40,50]
+# if num in l:                                          # removing user inputed num from list
+#     l.remove(num)
+#     print(l)
+# else:
+#     print("not in the list")
+
+
+
+
+# l = [10,20,30,10,30,40,50]
+# result = []
+# for i in l:
+#     if i not in result:                                       # storing list without duplicate and printing
+#         result.append(i)
+# print(result)
+
+# op
+# [10, 20, 30, 40, 50]
+
+
+
+# numbers = [1,2,3,4,5]
+# result = []
+# for i in numbers:
+#     result.append((i,i**2))                # [(1, 1), (2, 4), (3, 9), (4, 16), (5, 25)] as tuple
+# print(result)
+
+
+                                                
+                                                   
+
 
 
 
