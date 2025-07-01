@@ -946,12 +946,54 @@
 # print(l1)
 # print(l2)
 
-l= [1,2,3,4,2,1,1]
-print(l.count(1))
-print(l.index(2))
-print(sum(l))
-print(min(l))
-print(max(l))
+# l= [1,2,3,4,2,1,1]
+# print(l.count(1))
+# print(l.index(2))
+# print(sum(l))
+# print(min(l))
+# print(max(l))
+
+#swapping
+
+# a=10
+# b=20
+# print(a,b)                                        a=a+b
+# t=a                                               b=a-b    swapping wihout 3rd variable
+# a=b                                               a=a-b
+# b=t 
+# print(a,b)
+
+
+a = 0
+b = 1
+results = [0,1]
+for i in range(2,11):
+    next = a + b
+    results.append(next)
+    a=b 
+    b=next
+print(results)
+
+
+a=0
+b=1
+result = []
+num = int(input("Enter the number: "))
+if num <=0:
+    print("enter a positive number")
+elif num==1:
+    result.append(a)
+else:
+    t = [0,1]
+    result.extend(t)
+    for i in range(2,num):
+        next = a + b
+        result.append(next)
+        a,b=b,next
+print(result)
+        
+
+
 
 
 
