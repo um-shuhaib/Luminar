@@ -891,8 +891,67 @@
 
 
                                                 
-                                                   
+                                                   # list comprehension
 
+                                 # new_list = [expression for item in iterable if condition]
+
+# result = []
+# for i in range(1,8):
+#     result.append(i)
+# print(result)
+
+# # or
+                                                        # expresssion ahn append or return cheyyuka
+
+# result = [i for i in range(1,11)]
+# print(result)
+
+
+# even = [i for i in range(1,11) if i%2==0]
+# print(even)
+
+
+# sqr = [i**2 for i in range(1,10) ]
+# print(sqr)
+
+# numbers = [1,2,3,4,5]
+# result = [(i,i**2) for i in numbers]
+# print(result)
+
+
+                                          # new_list = [expression1 if condition1 else expression2 for item in iterable]
+                                          # new_list = [expression1 if condition1 else expression2 if condition2 ... else expression_N for item in iterable]
+
+
+# l = [1,2,3,4,5]
+# result = ["even" if i%2==0 else "odd" for i in l]
+# print(result)
+
+# result = [(i,i**2) if i%2==0 else (i,i**3) for i in range(1,11)]
+#print(result)
+
+# l.reverse()
+# l.sort()
+# l.sort(reverse=true)
+
+# in list we cant assign the list to another list. we need to use copy() method
+
+
+# l1=l2        x
+# l1=l2.copy   +
+
+# l1 = [1,2,3]
+# l2=l1.copy()
+# l1[0]=100
+# print(l1)
+# print(l2)
+
+l= [1,2,3,4,2,1,1]
+print(l.count(1))
+print(l.index(2))
+print(sum(l))
+print(min(l))
+print(max(l))
 
 
 
