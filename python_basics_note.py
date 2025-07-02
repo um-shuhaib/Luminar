@@ -964,33 +964,107 @@
 # print(a,b)
 
 
-a = 0
-b = 1
-results = [0,1]
-for i in range(2,11):
-    next = a + b
-    results.append(next)
-    a=b 
-    b=next
-print(results)
+# a = 0
+# b = 1
+# results = [0,1]
+# for i in range(2,11):
+#     next = a + b
+#     results.append(next)
+#     a=b 
+#     b=next
+# print(results)
+
+                                                                 # Fibanoocci series
+
+# a=0
+# b=1
+# result = []
+# num = int(input("Enter the number: "))
+# if num <=0:
+#     print("enter a positive number")
+# elif num==1:
+#     result.append(a)
+# else:
+#     t = [0,1]
+#     result.extend(t)
+#     for i in range(2,num):
+#         next = a + b
+#         result.append(next)
+#         a,b=b,next
+# print(result)
+
+# or
+
+# a = 0
+# b = 1
+# for i in range(10):
+#     print(a)
+#     next = a + b
+#     a=b
+#     b = next 
 
 
-a=0
-b=1
-result = []
-num = int(input("Enter the number: "))
-if num <=0:
-    print("enter a positive number")
-elif num==1:
-    result.append(a)
+# a = 0
+# b = 1
+# result =[]
+# for i in range(10):
+#     result.append(a)
+#     next = a + b
+#     a=b
+#     b = next 
+# print(result)
+
+
+
+
+                                                                       # prime number
+
+# num = int(input("Enter the number: "))
+
+# prime = 0
+# for i in range(2,num):
+#     if num%i==0:
+#         prime = 1
+#         break
+# if prime == 0:
+#     print("prime")
+# else:
+#     print("not prime")
+
+                                                                          # range of prime numbers
+
+# n = int(input("enter the range: "))
+
+# for i in range(3,n):
+#     flag = True
+#     for j in range(2,i):     # flag should be i the scop
+#         if i%j==0:
+         
+#             flag = False
+#             break 
+#     if flag:
+#        print(i)
+
+
+                                                                            # amstrong number
+
+num = int(input("enter the number: "))
+num1 =num
+l=len(str(num))
+res = 0
+while num>0:  
+    rem = num % 10 
+    res += rem**l 
+    num //= 10 
+if res == num1:
+    print(f"{num1} is amstromg")
 else:
-    t = [0,1]
-    result.extend(t)
-    for i in range(2,num):
-        next = a + b
-        result.append(next)
-        a,b=b,next
-print(result)
+    print(f"{num1} not amstrong")
+
+
+    
+        
+
         
 
 
