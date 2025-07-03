@@ -1,3 +1,5 @@
+# dynamically typed language
+
 # age = int (input ("hey..Whats your age? :")) 
 # if age >= 18:
 #     print("you can vote")
@@ -1048,24 +1050,215 @@
 
                                                                             # amstrong number
 
-num = int(input("enter the number: "))
-num1 =num
-l=len(str(num))
-res = 0
-while num>0:  
-    rem = num % 10 
-    res += rem**l 
-    num //= 10 
-if res == num1:
-    print(f"{num1} is amstromg")
-else:
-    print(f"{num1} not amstrong")
+# num = int(input("enter the number: "))
+# num1 =num
+# l=len(str(num))
+# res = 0
+# while num>0:  
+#     rem = num % 10 
+#     res += rem**l 
+#     num //= 10 
+# if res == num1:
+#     print(f"{num1} is amstromg")
+# else:
+#     print(f"{num1} not amstrong")
 
 
-    
+
+                                                               #dictionary
+
+
+# dict={"key":"value"}
+# dict={}
+# key - immutable only , no duplicate
+# valus - anything
+# dict1=dict()
+
+# no duplicate keys - if added then no error will shows - it will automatically assign the latest value 
+
+
+                                                        #  only immutable as key in dict = no list as key in dict
+
+# student = {"name":"shuhaib","age":24,"place":"vazhakkad"}
+
+# print(student["name"])
+# print(student["place"])
+# student["place"]="choorappata"
+# print(student["place"])
+# student["email"]="shuaib@gmail.com"            # email is not in the dict so it will add it to the dict
+# print(student)
+
+
+                                                       # dictioanary methods
         
+                                                                                    # get()
+                                                                                    # values() - values as list
+                                                                                    # keys() - keys as list
+                                                                                    # items() - seperate data as tuple - 
 
-        
+# student1 = {"name":"manu","place":"cpt"}
+
+# print(student1.get("name"))
+# print(student1.values())
+# print(student1.keys())
+# print(student1.items())
+
+# op 
+# dict_values(['manu', 'cpt'])
+# dict_keys(['name', 'place'])
+# dict_items([('name', 'manu'), ('place', 'cpt')])
+
+
+                                                                              # update() - to add new item or update existing item.
+                                                                              # dict["key"] = value - same as update()
+                                                                              # pop("key") - remove and return last item 
+
+
+# student1 = {"name":"manu","place":"cpt"}
+
+# student1["email"]="shuhaib@gmail.com"
+# student1.update({"phone":1234564586})
+# student1.update({"place":"oorkkadavu"})
+# print(student1)
+# l = [1,2,3]
+# print(l)
+# ret = l.pop()
+# print(ret) 
+# print(l)
+
+
+                                                                            # pop("key") - argument must be pass
+                                                                            # popitem() - no argument needed, last item will delete
+                                                                            # clear() - empty the dictionary
+                                                                            # del disctioanary_name - delete complete dict and list
+                                                                            # del dict_name["key"]
+
+# student1 = {"name":"manu","place":"cpt"}
+# print(student1)
+# # student1.pop("place")
+# # student1.popitem()
+# # student1.clear() #{'name': 'manu', 'place': 'cpt'}   #{}
+# del student1["place"]
+# print(student1)
+# del student1
+# print(student1)
+
+
+
+# dict = {}
+# print(dict)
+# for i in range(5):
+#     key = int(input("Enter the key: "))
+#     value = input("Enter the value: ")
+#     dict[key]=value                     #or dict.update({key:value})
+# print(dict)
+
+
+# keys = [1,2,3,4,5]
+# values = ["one","two","three","four","five"]
+# dict = {}
+# for i in range (len(keys)):
+#         dict.update({keys[i]:values[i]})
+# print(dict)
+
+# op
+# {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five'}
+
+# list = [10,20,30,10,30,40,20,30]
+# dict ={}
+# for i in list:
+#     count=0
+#     for j in range(len(list)):
+#         if i==list[j]:
+#             count+=1
+#     dict.update({i:count})
+# print(dict)
+
+# op 
+# {10: 2, 20: 2, 30: 3, 40: 1}                        # OR
+
+
+# list = [10,20,30,10,30,40,20,30]
+# dict ={}
+# for i in list:
+#     dict.update({i:list.count(i)})
+# print(dict)
+
+# op 
+# {10: 2, 20: 2, 30: 3, 40: 1}
+
+
+# list = [10,20,30,10,30,40,20,30]
+# dict ={}
+# for i in list:
+#     if i not in dict:
+#         dict.update({i:1})
+#     else:
+#         dict[i] +=1
+# print(dict)
+
+# # op 
+# # {10: 2, 20: 2, 30: 3, 40: 1}
+
+
+
+
+
+
+
+# dict = {"name":"mani","place":"kkd"}
+# for i in dict:
+#     print(i)
+#     print(dict[i])
+
+
+
+
+# d1 = {1:"one",2:"two"}
+# d2=d1.copy()
+# d2.update({1:"ten"})
+# print(d1)
+# print(d2) 
+
+# op 
+# {1: 'one', 2: 'two'}
+# {1: 'ten', 2: 'two'}
+
+# d1 = {1:"one",2:"two"}
+# d2=d1
+# d2.update({1:"ten"})
+# print(d1)
+# print(d2) 
+
+# op 
+# {1: 'ten', 2: 'two'}
+# {1: 'ten', 2: 'two'}
+
+
+'''
+# task MONDAY
+
+# create Phone book
+
+user = {}
+
+1. add contact {"name":"manu","phone":[244554,3463545],"email":"ahbsjb@gmail.com"}
+2. view - print the dict
+3. update  - phone, email
+4. delete
+5. exit 
+'''
+
+
+
+
+
+
+
+
+
+
+
 
 
 
