@@ -45,7 +45,7 @@
 
 
 
-#membersjip operator - in, not in
+#membership operator - in, not in
 # (is there )
 
 # s= "hello"
@@ -448,7 +448,7 @@
 
 
                             # LOOP CONTROLLING STTATEMENT
-                            # break, continue, pass                          pass for empty statement
+                            # break, continue, pass                          #pass for empty statement
 
 # number = [10,11,12,13,14,15]
 # for i in number:
@@ -604,7 +604,7 @@
                                 # print(len(s.rstrip()))      # .rstrip()   For removing last blank Spaces
 
 
-                                            # splittind
+                                            # splitting
 
 
 # s = " Good,morning "
@@ -1235,35 +1235,226 @@
 # {1: 'ten', 2: 'two'}
 
 
-'''
-# task MONDAY
+                                                                     # SET
 
-# create Phone book
+# mutable - unordered - indexing is not possible - no duplicate values
+# no mutable data type as elements in set {no list, dict and set} - only inmutable elements
+# set1 = set()   - empty set
+# set2 = {1,2,3}
 
-user = {}
+# l = {1,2,1}
+# s = set(l)                 # we can remove duplicate value of list using SET.
+# print(list(s))
 
-1. add contact {"name":"manu","phone":[244554,3463545],"email":"ahbsjb@gmail.com"}
-2. view - print the dict
-3. update  - phone, email
-4. delete
-5. exit 
-'''
-
-
+# op 
+# [1, 2]
 
 
+# set = {10,"python",20,10,"python"}
+# print(set)
+
+# op 
+# {10, 20, 'python'}
+
+                                                                       #set Methods
+
+                                # .add() - only inmutable arguments
+                                # .update() - iterable values only
+                                # .remove() - set.remove(10) - if not exist there will be an error
+                                # discard() - set.discard(10) - no error if not exist
+                                # .pop() - no argument - removes random element and returns
+                                # del name - delete set
+                                # .clear() - remove all elements 
+                                # .union()  - set1.union(set2)
+                                # .intersection() - 
+                                # .difference() - 
+                                # .symmetric_difference() - 
 
 
 
+# set = {10,20,30,40}
+# set.add(100)
+# print(set)
+# set.add("python")
+# print(set)
+
+# op 
+# {100, 40, 10, 20, 30}
+# {100, 40, 10, 20, 'python', 30}
+
+# set = {10,20,30}
+# set.update([1,2,3])
+# print(set)
+# set.update("django")
+# print(set)
+# set.update(("s","b"))
+# print(set)
+
+# op 
+# {1, 2, 3, 10, 20, 30}
+# {1, 2, 3, 10, 'g', 'j', 'n', 20, 'd', 'o', 'a', 30}
+# {'s', 1, 2, 3, 'b', 10, 'g', 'j', 'n', 20, 'd', 'o', 'a', 30}
 
 
+# set = {10,20,30}
+# print(set)
+# set.remove(10)
+# print(set)
+
+# op 
+# {10, 20, 30}
+# {20, 30}
+
+# set = {10,20,30}
+# set.discard(10)
+# print(set)
+# set.discard(100)
+# print(set)
+
+# op 
+# {20, 30}
+# {20, 30}
+
+# set = {10,20,30}
+# print(set)
+# ret = set.pop()
+# print(ret)
+# print(set)
+# set.clear()
+# print(set)
+# del set 
+# print(set)
+
+# op 
+# {10, 20, 30}
+# 10
+# {20, 30}
+# set()
+# <class 'set'>
+
+# set1 = {3,4,5,6}
+# set2 = {1,2,3,4}
+# print(set1.union(set2))
+# print(set1.intersection(set2))
+# print(set1.difference(set2))
+# print(set2.difference(set1))
+# print(set2.symmetric_difference(set1))
+#  op 
+# {1, 2, 3, 4, 5, 6}
+# {3, 4}
+# {5, 6}
+# {1, 2}
+# {1, 2, 5, 6}
+
+                                                                     # tuple
+
+# NO MODIFICATION - () is not manditory - but , is manditory
+# immutable - iterable - indexed - slicing - duplicates - any data types
+
+# t1 =(1,2,3,4,5) # tuple
+# t2 = 1,2,3,4,5 #also tiple   
+# t3 = () #empty
+# t4 = tuple() # empty
+
+# t5 = (10) # integer
+# t6 = (10,) # tuple
+# t7 = 10, # tuple        # for tuple , is important
+# print(type(t5))
+# print(type(t6))
+
+# op 
+# <class 'int'>
+# <class 'tuple'>
+
+                                                       # Tuple methods
+
+                            # .index() - find index
+                            # .count()
+                            #
+# t = (10,20,30,10)
+# print(t.index(20)) # 1
+# print(t.count(10)) # 2
 
 
+                                                          # Tuple - packing and unpacking
+
+# number = (10,20,30,40) # 4 elements so
+# print(number) 
+# a,b,c,d = number # each element is assigned to seperate variable 
+# print(a)
+# print(b)
+# print(c)
+# print(d)
+
+# op 
+# (10, 20, 30, 40)
+# 10
+# 20
+# 30
+# 40
 
 
+# if lots of elements
 
 
+# t = (1,2,3,4,5,6,7,8,9,5)
+# a,b,c, *d = t
+# print(a)
+# print(b)
+# print(c)
+# print(d)
 
+# op 
+# 1
+# 2
+# 3
+# [4, 5, 6, 7, 8, 9, 5]
+
+# a,b, *c,d = t
+# print(a)
+# print(b)
+# print(c)
+# print(d)
+
+# op 
+# 1
+# 2
+# [3, 4, 5, 6, 7, 8, 9]
+# 5
+
+# *a,b,c,d = t
+# print(a)
+# print(b)
+# print(c)
+# print(d)
+
+# op 
+# [1, 2, 3, 4, 5, 6, 7]
+# 8
+# 9
+# 5
+
+                                                           # string - comtinues..
+
+# name = "manu"
+# age = 24
+# print(f"my name is {name} and age is {age}") # my name is manu and age is 24   
+# print("my name is {} and age is {}".format(name,age)) # my name is manu and age is 24         #default formatting  
+# print("my name is {} and age is {}".format(age,name)) # my name is 24 and age is manu         #default formatting
+# print("my name is {1} and age is {0}".format(age,name)) # my name is manu and age is 24       # positional formatting
+# print("my name is {y} and age is {x}".format(x=age,y=name)) # my name is manu and age is 24   #keyword formatting
+
+                                                     
+                                                             # path in sting
+# path = "c:\newpython\task1"
+# print(path)
+# path = r"c:\newpython\task1"     # using "r" for raw string like "f" in printing
+# print(path)
+
+# op                             |
+# c:                             |  #1st print
+# ewpython        ask1           |
+# c:\newpython\task1                # 2nd print
 
 
 
