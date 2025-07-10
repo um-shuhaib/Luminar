@@ -1074,7 +1074,7 @@
 # valus - anything
 # dict1=dict()
 
-# no duplicate keys - if added then no error will shows - it will automatically assign the latest value 
+# no duplicate keys - if added then NO ERROR will shows - it will automatically assign the latest value 
 
 
                                                         #  only immutable as key in dict = no list as key in dict
@@ -1264,7 +1264,8 @@
                                 # discard() - set.discard(10) - no error if not exist
                                 # .pop() - no argument - removes random element and returns
                                 # del name - delete set
-                                # .clear() - remove all elements 
+                                # .clear() - remove all elements
+                                #  
                                 # .union()  - set1.union(set2)
                                 # .intersection() - 
                                 # .difference() - 
@@ -1358,7 +1359,7 @@
 
 # t5 = (10) # integer
 # t6 = (10,) # tuple
-# t7 = 10, # tuple        # for tuple , is important
+# t7 = 10, # tuple        # for tuple COMMA is important
 # print(type(t5))
 # print(type(t6))
 
@@ -1439,13 +1440,13 @@
 # name = "manu"
 # age = 24
 # print(f"my name is {name} and age is {age}") # my name is manu and age is 24   
-# print("my name is {} and age is {}".format(name,age)) # my name is manu and age is 24         #default formatting  
 # print("my name is {} and age is {}".format(age,name)) # my name is 24 and age is manu         #default formatting
+# print("my name is {} and age is {}".format(name,age)) # my name is manu and age is 24         #default formatting  
 # print("my name is {1} and age is {0}".format(age,name)) # my name is manu and age is 24       # positional formatting
 # print("my name is {y} and age is {x}".format(x=age,y=name)) # my name is manu and age is 24   #keyword formatting
 
                                                      
-                                                             # path in sting
+                                                             # path in string
 # path = "c:\newpython\task1"
 # print(path)
 # path = r"c:\newpython\task1"     # using "r" for raw string like "f" in printing
@@ -1455,6 +1456,88 @@
 # c:                             |  #1st print
 # ewpython        ask1           |
 # c:\newpython\task1                # 2nd print
+
+
+
+#functions
+
+# buildin
+# user defines
+# lamda functions
+# recursive functions
+
+# def fun_name(parameters):
+#     block of statement
+
+# fun_name(arguments)
+
+# sum()
+
+# def su_m(a,b):
+#     '''returns the sum of 2 numbers'''
+#     s = a + b
+#     print(s)
+# su_m(100,200)
+# print(su_m.__doc__)                            # returm the string comment in that fun
+# print(print.__doc__)         # what is doc string - oru fun ndhann document cheythh veykkan
+
+# same name two fun...last one will use 
+# def su_m(a,b,c=0):  # default parameter value
+#     s=a+b+c
+#     print(s) 
+# su_m(10,20)
+# su_m(10,20,10)
+# op 
+# 30
+# 40
+
+# def user_det(name,age):        
+#     print(f"my name is {name} and age is {age}")
+
+# user_det(age=24,name="shu")              # keyword argument
+
+
+
+# def info(*args):  # recieve args as tuple - arbitrary arguments (*args)
+#     print(sum(args))
+
+# info(1,2)
+# info(3,1,2)
+# info(1,5,8,2)
+
+# def info(**kwargs):  #recive as dict - srbitrary keyword argumnts
+#     print(kwargs)
+#     print(f"name: {kwargs["name"]} and age: {kwargs["age"]}")
+
+# info(age=25,place="kkd",name="spj")
+
+# package - group of modules
+# module - python file - we can use a module in another module (a file in another file)
+# import fun
+
+# import functions
+
+# functions.find_sum(1,2,3) # 6
+
+# import functions
+
+# sum = functions.find_sum(1,2,3)
+# print(sum)
+
+
+# creating a folder to a package create "__init__.py" file
+
+from packages import module1
+
+module1.find_sum(1,2,3)
+
+
+
+
+
+
+
+
 
 
 
