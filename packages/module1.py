@@ -12,8 +12,10 @@ def find_sum(*args):
 # print(math.factorial(10))
 # print(math.sqrt.__doc__)
 
-import random
+# import random
 
-print(random.random())  #0-1
-print(random.randint(1,10))  #1-10
-print(random.choice([1,2,3]))  #as list - iterable formate
+# print(random.random())  #0-1
+# print(random.randint(1,10))  #1-10
+# print(random.choice([1,2,3]))  #as list - iterable formate
+
+

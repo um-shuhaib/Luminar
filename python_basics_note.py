@@ -1459,17 +1459,17 @@
 
 
 
-#functions
+                                                                         #functions
 
 # buildin
 # user defines
-# lamda functions
+# lamda functions - anonimous fun
 # recursive functions
 
-# def fun_name(parameters):
+# def fun_name(parameters):            #func variable
 #     block of statement
 
-# fun_name(arguments)
+# fun_name(arguments)                  #fun call var
 
 # sum()
 
@@ -1527,17 +1527,132 @@
 
 # creating a folder to a package create "__init__.py" file
 
-from packages import module1
+# from packages import module1
 
-module1.find_sum(1,2,3)
-
-
+# module1.find_sum(1,2,3)
 
 
-
-
-
-
+# from datetime import datetime
+# print(datetime.date.today())    # current date
+# print(datetime.time(11,45,34))    # op 11:45:34
+# print(datetime.now()) # date and time
 
 
 
+# import datetime
+
+# print(datetime.date.today()) # date
+# print(datetime.date.today().year) # year
+# print(datetime.date.today().month) # month
+# print(datetime.date.today().day) # day
+
+
+
+
+# from datetime import datetime
+# full_date = datetime.now()
+# print(full_date) # 2025-07-10 11:53:30.242611
+# print(full_date.strftime("%y")) # 25
+# print(full_date.strftime("%Y")) #2025
+# print(full_date.strftime("%m")) # 07
+# print(full_date.strftime("%d")) # 10
+# print(full_date.strftime("%a")) # thu
+# print(full_date.strftime("%A")) # Thursday
+# print(full_date.strftime("%b")) # jul
+# print(full_date.strftime("%B")) # July
+
+
+
+# from datetime import datetime
+# full_date = datetime.now()
+# print(full_date.strftime("%d %b %Y")) # 10 Jul 2025
+
+
+                                                                    # lambda function
+
+# anonimous
+# multiple arguments - but single expression
+
+# lambda arguments:expression
+                                                                # map() 
+                                                                # filter() 
+                                                                # reduce()
+
+# def fin_sum(x,y):
+#     return x+y
+# print(fin_sum(2,3))
+
+# res = lambda x,y:x+y  # res is now lambda fun
+# print(res(5,5)) # 10
+                                                                          # map()
+
+# map() - given iterable ne pos nu new value kodkkan
+
+# l = [10,11,12,13]
+# res = list(map(lambda i:i**2,l))
+# print(res)       # [100, 121, 144, 169]
+
+
+                                                                        # filter()
+
+# l = [10,11,12,13,14]
+# res = list(filter(lambda i:i%2==0,l)) # return only condition true value
+# res1 = list(map(lambda i:i%2==0,l)) # cheks every values condition and returns booleon
+# print(res)       # [10, 12, 14]
+# print(res1)       # [True, False, True, False, True]
+
+
+                                                                          # reduce()
+# not directly callable 
+# need import a module to use reduce()
+# for generate single value
+# must more than 2 arguments needed
+# l = [10,11,12,13]
+# import functools
+# res = functools.reduce(lambda x,y:x+y,l) # initially x = 0th and y = 1st pos and the res stored to x. nxt iteration onward new value is assigned to y only and res stored in x.
+# print(res)   # 46
+'''
+hw 
+iterators, generators and decorators methods in fun
+
+'''
+                                                                     # function recursion
+
+# python had recursion limit - it will automatically stops
+# import sys
+# print(sys.getrecursionlimit()) # 1000
+
+
+# def fact(a):
+#     if a==1:
+#         return a 
+#     else:
+#          return a*fact(a-1)     # recursivly calling
+# a = 5
+# print(fact(a)) # 120
+
+
+                                                                     # regular expressions
+
+# for validation
+# search patters
+# re module 
+
+import re
+password = "@abc"
+pattern = "\d"           # \d denoting numbers in reg.exp
+
+print(re.search(pattern,password))   # if not matching it returns NONE if it matches returns a relation
+
+if re.search(pattern,password):
+    print("valid pass")
+else:
+    print("not valid pass")
+
+# op valid
+# <re.Match object; span=(0, 1), match='1'>
+# valid pass
+
+# op not valid
+# None
+# not valid pass
