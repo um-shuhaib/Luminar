@@ -29,6 +29,15 @@
 # print("The Sum is : ",c) 
 
 #operators
+
+# Arithmetic operators
+# Assignment operators
+# Comparison operators
+# Logical operators
+# Bitwise operators
+# Identity operators
+# Membership operators
+
 # arithmetic - // = floor division --- 10//3 = 3  ... no points
 # % and // are opposite operators 
 
@@ -1638,21 +1647,147 @@ iterators, generators and decorators methods in fun
 # search patters
 # re module 
 
-import re
-password = "@abc"
-pattern = "\d"           # \d denoting numbers in reg.exp
+# import re
+# password = "f21@abc"
+# pattern = "\d"           # \d denoting numbers in reg.exp
+#                          # \d+ two matching res
 
-print(re.search(pattern,password))   # if not matching it returns NONE if it matches returns a relation
+# print(re.search(pattern,password))   # if not matching it returns NONE if it matches returns a matching obj
 
-if re.search(pattern,password):
-    print("valid pass")
-else:
-    print("not valid pass")
-
-# op valid
-# <re.Match object; span=(0, 1), match='1'>
-# valid pass
-
+# if re.search(pattern,password):
+#     print("valid pass")
+# else:
+#     print("not valid pass")
+#                                                                 # re.search(patterns,to check) - 
+# op valid                                                        # re.findall(pattern,string) -
+# <re.Match object; span=(0, 1), match='1'>                       # re.finditer(pattern,string) - 
+# valid pass                                                      # re.sub(from,to,where) - replace 
+                                                                  # re.split(what,where) - 
+                                                                  # res = re.search(pattern,password) :
+                                                                    # res.start() - returns the first occurense
+                                                                    # res.end() - end position
 # op not valid
 # None
 # not valid pass
+
+# import re
+# password = "123@kkj"
+# patters = "\d"
+# patt = "@"
+# print(re.search(patters,password))
+
+# print(re.findall(patters,password))        # ['1', '2', '3']   returns first occurence and the
+# print(re.finditer(patters,password))
+# for i in re.finditer(patters,password):
+#     print(i)
+# print(re.sub(patt,"*",password))          # replace - 
+
+# op 
+#   patters = "\d"
+# <re.Match object; span=(0, 1), match='1'>
+# ['1', '2', '3']
+# <callable_iterator object at 0x000001B13D13F0A0>
+# <re.Match object; span=(0, 1), match='1'>
+# <re.Match object; span=(1, 2), match='2'>
+# <re.Match object; span=(2, 3), match='3'>
+# 123*kkj
+
+# import re
+# split = " "    # or = "\s"   - for space
+# passw = "hello @123"
+# print(re.split(split,passw))         # ['hello', '@123']
+
+                                                      # "abc" - it will check exactly "abc"
+                                                      # [abc] - it wil check "a or b or c"
+# import re                                             # [0-9] - it will check any num between 1 to 9
+# pattern = "123"                                       # "^abc" - starting with "abc"
+# pattern1 = "[123]"                                    # "p$" - ending with "p"
+# pattern2 = "[0-9]" # between any                    # "in*" - i kayinjit n etra occurance ayalm kuzhappm illa. 0 or more.     
+# pattern3 = "^abc" #startwith                        # * - 0 or more occurence
+# pattern4 = "abc$" #endwith                          # + - 1 or more occurence
+
+# pattern5 = "[0-9a-zA-Z]" # all number, small and cap letters
+# pattern0 = "^[a-z]$"   # only one char starting and ending "a" - ok but "ab" - not ok
+# # password = input("enter the string: ")
+# print(re.search(pattern,password))
+# print(re.search(pattern1,password))
+# print(re.search(pattern2,password))
+# print(re.search(pattern3,password))
+# print(re.search(pattern4,password))
+# print(re.search(pattern5,password))
+
+# op 
+# <re.Match object; span=(0, 3), match='123'>
+# <re.Match object; span=(0, 1), match='1'>
+# <re.Match object; span=(0, 1), match='1'>
+# None
+# <re.Match object; span=(4, 7), match='abc'>
+# <re.Match object; span=(0, 1), match='1'>
+# patt = "^[0-9][0-9]$"        # two digit must
+# print(re.search(patt,password))
+
+# patt = "^[0-9]{10,12}$"                # {min,max}        
+# print(re.search(patt,password))
+# import re 
+# password = input("enter the string: ")
+# patt = "^[6789][0-9]{9}$"          # or [6-9]       # start with 6,7,8,9 and end with any  num - 10 num must
+# print(re.search(patt,password))
+
+
+# import re
+# str = "i the rain inn spain"  # ['i', 'in', 'inn', 'in']
+# patt = "in*"
+# print(re.findall(patt,str))
+
+# qn - username - min 8, one alpha, one numb and one special
+
+import re 
+username = input("enter the username: ")
+# pattern = "([0-9]+[A-Za-z]+[@#_]+){7,16}"
+pattern = "(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[@#$%^&*]){8,16}$"
+if re.search(pattern,username):
+    print("valid username")
+else:
+    print("invalid username")
+
+# or 
+
+# pattern1 = "[0-9]+"
+# pattern2 = "[a-zA_Z]+"
+# pattern3 = "[@#_]+"
+# if len(username) < 8:
+#     print("invalid")
+# else:
+#     if (re.search(pattern1,username)) and (re.search(pattern2,username)) and (re.search(pattern3,username)):
+#         print("valid")
+#     else:
+#         print("invalid")
+
+
+
+# qn - Phone number validation
+
+# a? - atmost one-
+# |  a|b or 
+# a.b - first and last must. in between any - total 3 char
+# ?=  - must one
+
+
+# import re
+# number = input("enter the number: ")
+# pattern = "^(\+91[ |-]?)?([6-9][0-9]{9})$"
+# if re.search(pattern,number):
+#     print("valid")
+# else:
+#     print("invalid")
+
+
+# qn - email validation
+
+# import re 
+# email = input("enter the mail id: ")
+# pattern = "^([0-9a-zA-Z]+[#_]*)@{1}([a-zA-Z]+)(\.){1}([a-zA-Z]{2,3})$"
+# if re.search(pattern,email):
+#     print("valid")
+# else:
+#     print("invalid")

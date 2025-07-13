@@ -128,6 +128,31 @@ a,b,*c,d = t
     #if lots of elements
 
 
+....................................................................regularExpression
+
+ 
+# re.findall(pattern,string) -
+# re.finditer(pattern,string) -    
+# re.sub(from,to,where) - replace 
+# re.split(what,where) - 
+# res = re.search(pattern,password) :
+# res.start() - returns the first occurense
+# res.end() - end position
+
+# "abc" - 
+# [abc] - 
+# [0-9] - 
+# "^abc" - 
+# "p$" - 
+# "in*" -     
+# * - 0 or more occurence
+# + - 1 or more occurence
+# a? - atmost one
+# | -  a|b or 
+# a.b - first and last must. in between any - total 3 char
+# ?=  - must one
+
+
 
 
 '''
