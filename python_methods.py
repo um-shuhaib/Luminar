@@ -127,17 +127,60 @@ a,b,c, *d = t
 a,b,*c,d = t
     #if lots of elements
 
+.........................................................................#functions
 
-....................................................................regularExpression
+def fun(*args) - multi value
+def fun(**kwargs) - multi var
 
- 
+.........................................................................#recursivefunction
+........................................................................#lambdaFunction
+
+# lambda (arguments:expression,list)
+map() - gives full result
+filter() - filtered only
+reduce() - need "functool" to import - return only single result
+
+
+
+........................................................................#package
+
+__init__.py - in the folder
+
+'''
+# from datetime import datetime
+# print(datetime.date.today())    # current date
+# print(datetime.time(11,45,34))    # op 11:45:34
+# print(datetime.now()) # date and time
+# print(datetime.date.today().year) # year
+# print(datetime.date.today().month) # month
+# print(datetime.date.today().day) # day
+
+# full_date = datetime.now()
+# print(full_date) # 2025-07-10 11:53:30.242611
+# print(full_date.strftime("%y")) # 25
+# print(full_date.strftime("%Y")) #2025
+# print(full_date.strftime("%m")) # 07                               .strftime()
+# print(full_date.strftime("%d")) # 10
+# print(full_date.strftime("%a")) # thu
+# print(full_date.strftime("%A")) # Thursday
+# print(full_date.strftime("%b")) # jul
+# print(full_date.strftime("%B")) # July
+
+'''
+
+....................................................................#regularExpression
+
+# res = re.search(pattern,password) 
 # re.findall(pattern,string) -
 # re.finditer(pattern,string) -    
 # re.sub(from,to,where) - replace 
 # re.split(what,where) - 
 # res = re.search(pattern,password) :
-# res.start() - returns the first occurense
-# res.end() - end position
+    # res.start() - returns the first occurense
+    # res.end() - end position
+
+\d - num
+\s - space
 
 # "abc" - 
 # [abc] - 
@@ -147,12 +190,20 @@ a,b,*c,d = t
 # "in*" -     
 # * - 0 or more occurence
 # + - 1 or more occurence
-# a? - atmost one
+# a? - atmost one a
 # | -  a|b or 
 # a.b - first and last must. in between any - total 3 char
 # ?=  - must one
 
-
+# \A - ^ (only one word )
+# \Z - $
+# \b - \bp start - p\b end - every word starting and ending with p (no special charectors)
+# \d - numbers
+# \D - not digit returns all element except number 
+# \s - returns space 
+# \S - returns all not space elements 
+# \w - word charectors (0-9,a-z and _ )
+# \W - non word charectors
 
 
 '''

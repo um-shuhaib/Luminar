@@ -1,4 +1,4 @@
-# dynamically typed language
+# oops, interpreted, portable, dynamically typed high level programming language
 
 # age = int (input ("hey..Whats your age? :")) 
 # if age >= 18:
@@ -1705,6 +1705,7 @@ iterators, generators and decorators methods in fun
 # pattern2 = "[0-9]" # between any                    # "in*" - i kayinjit n etra occurance ayalm kuzhappm illa. 0 or more.     
 # pattern3 = "^abc" #startwith                        # * - 0 or more occurence
 # pattern4 = "abc$" #endwith                          # + - 1 or more occurence
+                                                    
 
 # pattern5 = "[0-9a-zA-Z]" # all number, small and cap letters
 # pattern0 = "^[a-z]$"   # only one char starting and ending "a" - ok but "ab" - not ok
@@ -1739,16 +1740,20 @@ iterators, generators and decorators methods in fun
 # patt = "in*"
 # print(re.findall(patt,str))
 
+'''
+
 # qn - username - min 8, one alpha, one numb and one special
 
 import re 
 username = input("enter the username: ")
 # pattern = "([0-9]+[A-Za-z]+[@#_]+){7,16}"
-pattern = "(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[@#$%^&*]){8,16}$"
+pattern = "^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[@#\$%\^&\*]){8,16}$"                     # ????????
 if re.search(pattern,username):
     print("valid username")
 else:
     print("invalid username")
+
+    '''
 
 # or 
 
@@ -1791,3 +1796,53 @@ else:
 #     print("valid")
 # else:
 #     print("invalid")
+
+
+
+
+# \A - ^ (only one word )
+# \Z - $
+# \b - \bp start - p\b end - every word starting and ending with p (no special charectors)
+# \d - numbers
+# \D - not digit returns all element except number 
+# \s - returns space 
+# \S - returns all not space elements 
+# \w - word charectors (0-9,a-z and _ )
+# \W - non word charectors 
+
+
+                                                   # iterators
+# l =[10,20,30]
+# # for i in l:
+# #     print(i)
+# it = iter(l) 
+# print(next(it))
+# print(next(it))
+# print(next(it))
+# print(next(it))
+
+                                                       # generators
+# def func():
+#     yield 1
+#     yield 2
+#     yield 3
+
+# gen = func()
+# print(next(gen))
+# print(next(gen))
+# print(next(gen))
+# print(next(gen))
+
+                                                      # decorators
+# def my_decorative(func):
+#     def wrapper():
+#         print("before")
+#         func()
+#         print("after")
+#     return wrapper
+
+# @my_decorative
+# def fun():
+#     print("hello")
+# fun()
+

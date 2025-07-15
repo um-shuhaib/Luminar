@@ -1,4 +1,4 @@
-n = 5
+a = "abcdcdc"
+s = "cdc"
 
-if n==range(4,10):
-    print("oass")
+print(a.count(s))
