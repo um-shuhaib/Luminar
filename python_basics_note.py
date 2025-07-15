@@ -1740,20 +1740,20 @@ iterators, generators and decorators methods in fun
 # patt = "in*"
 # print(re.findall(patt,str))
 
-'''
+
 
 # qn - username - min 8, one alpha, one numb and one special
 
-import re 
-username = input("enter the username: ")
-# pattern = "([0-9]+[A-Za-z]+[@#_]+){7,16}"
-pattern = "^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[@#\$%\^&\*]){8,16}$"                     # ????????
-if re.search(pattern,username):
-    print("valid username")
-else:
-    print("invalid username")
+# import re 
+# username = input("enter the username: ")
+# # pattern = "([0-9]+[A-Za-z]+[@#_]+){7,16}"
+# pattern = "(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[@#\$%\^&\*]).{8,16}$"                     # ending dot must
+# if re.search(pattern,username):
+#     print("valid username")
+# else:
+#     print("invalid username")
 
-    '''
+    
 
 # or 
 
@@ -1846,3 +1846,94 @@ else:
 #     print("hello")
 # fun()
 
+                                                        # scope of a variable
+
+# accessibilty - local scope and global scope
+
+# if a var is "inmutable" we "cant use" it in the func - both have defferent adddress
+# for mutable it is assigns the pointer but in inmutable it creates new address
+
+                                                  # parameter passing techniques
+    # pass by value - local
+    # pass by reference - global -  keyword for inmutable and argument for mutable
+
+
+                                          # global x
+# def info():
+#     global x
+#     x = 20
+#     print(x)
+# x = 10
+# info()
+# print(x)
+
+# op
+# 20
+# 20
+
+
+# def change_date():
+#     l = [10,20,30]
+#     print(l)
+# l = [1,2,3]
+# change_date()
+# print(l)
+
+# op
+# [10, 20, 30]
+# [1, 2, 3]
+
+
+# def change_date(l):
+#     l[0] = 10
+#     print(l)
+# l = [1,2,3]
+# change_date(l)
+# print(l)
+
+# op
+# [10, 2, 3]
+# [10, 2, 3]
+
+# def change_date(l):
+#     l = [10,20,30]
+#     print(l)
+# l = [1,2,3]
+# change_date(l)
+# print(l)
+
+# op
+# [10, 20, 30]
+# [1, 2, 3]
+
+
+# id() - address
+# dir() - all atributes or methods
+
+# def change_date():
+#     global l
+#     l = [10,20,30]
+#     print(l)
+# l = [1,2,3]
+# change_date()
+# print(l)
+
+# op
+# [10, 20, 30]
+# [10, 20, 30]
+
+
+                                                                # enumerate() - count of iteration
+#                                                                               returs as tuple
+# get result as a tuple like (iterable count,value)
+
+# l = [100,200,300]
+# print(list(enumerate(l)))   # op - [(0, 100), (1, 200), (2, 300)]
+
+                                                      
+                                                      # zip() - combines multiple lists to one
+
+
+# l1 = [1,2,3]
+# l2 = ["one","two","three"]
+# print(list(zip(l1,l2)))              # [(1, 'one'), (2, 'two'), (3, 'three')]

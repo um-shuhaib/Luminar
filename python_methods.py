@@ -206,5 +206,8 @@ __init__.py - in the folder
 # \W - non word charectors
 
 
+...................................................................................
+# id() - address
+# dir() - all atributes or methods
 '''
 
