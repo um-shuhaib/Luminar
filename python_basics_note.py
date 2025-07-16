@@ -263,7 +263,7 @@
 # * * *
 # * * * *
 # * * * * *
-
+'''
 # for row in range(6):
 #     for col in range(6,row,-1):
 #         print("*",end=" ")
@@ -276,7 +276,7 @@
 # * * *
 # * *
 # *
-
+'''
 # n=10
 # for raw in range(n):
 #     for col in range(n-raw):    
@@ -855,7 +855,7 @@
 # numbers = [10,11,12,13,14,15,16,17,"python"]
 
 # # numbers.pop()         # last index
-# # numbers.pop(0)         # last index
+# # numbers.pop(0)         # first index
 # # numbers.pop(-1)         # last index
 
 # print(numbers)
@@ -1676,7 +1676,7 @@ iterators, generators and decorators methods in fun
 # patt = "@"
 # print(re.search(patters,password))
 
-# print(re.findall(patters,password))        # ['1', '2', '3']   returns first occurence and the
+# print(re.findall(patters,password))        # ['1', '2', '3']   
 # print(re.finditer(patters,password))
 # for i in re.finditer(patters,password):
 #     print(i)
@@ -1937,3 +1937,6 @@ iterators, generators and decorators methods in fun
 # l1 = [1,2,3]
 # l2 = ["one","two","three"]
 # print(list(zip(l1,l2)))              # [(1, 'one'), (2, 'two'), (3, 'three')]
+
+
+

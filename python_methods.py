@@ -66,8 +66,11 @@ slicing - # s[-1][0:6] string[select element][start:end]
 .pop()
 .remove()
 .clear()
+.sort()
+.reverse()
+.sort(reverse=True)
 del name
-
+len()
 ---------# list comprehension
 new_list = [expression for item in iterable if condition]
 new_list = [expression1 if condition1 else expression2 if condition2 ... else expression_N for item in iterable]
