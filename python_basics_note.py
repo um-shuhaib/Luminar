@@ -1769,14 +1769,13 @@ iterators, generators and decorators methods in fun
 #         print("invalid")
 
 
-
-# qn - Phone number validation
-
 # a? - atmost one-
 # |  a|b or 
 # a.b - first and last must. in between any - total 3 char
 # ?=  - must one
 
+
+# qn - Phone number validation
 
 # import re
 # number = input("enter the number: ")

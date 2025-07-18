@@ -1,8 +1,7 @@
 import re 
-password = "123@kkj"
-patters = "\d"
-patter = "*"
-print(re.search(patters,password))
-print(re.findall(patters,password))
-print(re.split("@",password))
-# print(re.findall(patter,password))
+num = input("enter the number: ")
+pattern = "^(\+91[\s|-]?)?([6-9][0-9]{9})$"
+if re.search(pattern,num):
+    print("valid")
+else:
+    print("invalid")
