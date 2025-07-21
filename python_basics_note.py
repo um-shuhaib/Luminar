@@ -1939,3 +1939,15 @@ iterators, generators and decorators methods in fun
 
 
 
+list = [[10,12,45],[15,46,25],[11]]
+
+# nw_list = [i[]]
+# li = []
+# for i in list:
+#     for j in i:
+#         li.append(j)
+# print(li)
+
+
+new_list = [j for i in list for j in i]
+print(new_list)
