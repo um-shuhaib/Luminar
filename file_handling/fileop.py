@@ -7,6 +7,13 @@
 #   r - read - default
 #   w - write
 #   a - append - not clear existing data
+#   x - create new file
+#   rb - binary file
+#   wb - binary file
+#   r+ - read and write as append
+#   w+ - clear all when open in w+
+#   a+ - 
+#   
 # EOF - \n
 
 
@@ -142,8 +149,16 @@
 # print(count)
 # f.close()
 
-f = open("file2.txt","r")
-content = f.read()
-print(f.tell())   # 1297
-f.seek(5)                             # pointer moved to 5
-print(f.tell()) # 5
+# f = open("file2.txt","r")
+# content = f.read()
+# print(f.tell())   # 1297
+# f.seek(5)                             # pointer moved to 5
+# print(f.tell()) # 5
+
+
+
+f = open("file_handling/file2.txt","r+")
+print(f.read())
+f.write(" hi daa")
+f.seek(0)
+print(f.read())

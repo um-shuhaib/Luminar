@@ -1939,7 +1939,7 @@ iterators, generators and decorators methods in fun
 
 
 
-list = [[10,12,45],[15,46,25],[11]]
+# list = [[10,12,45],[15,46,25],[11]]
 
 # nw_list = [i[]]
 # li = []
@@ -1949,5 +1949,20 @@ list = [[10,12,45],[15,46,25],[11]]
 # print(li)
 
 
-new_list = [j for i in list for j in i]
-print(new_list)
+# new_list = [j for i in list for j in i]
+# print(new_list)
+
+
+
+# list = [i for i in range(22,31)]
+# list = list(range(22,31))
+# odd_list = [i**3 for i in list if i%2!=0]
+# even_list = [i**2 for i in list if i%2==0]                                //////////////?????????
+# new_list = [i**2 if i%2==0 else i**3 if i%2==0 for i in list]
+# print(f"odd numbers :{odd_list}\neven numbers:{even_list}")
+
+
+
+# unique char from a string as fun                //???????????????????
+
+
