@@ -9,7 +9,9 @@
 
 
 
-
-
+num = [("hi",1)]
+print(num)
+num.remove("hi")
+print(num)
 
 
