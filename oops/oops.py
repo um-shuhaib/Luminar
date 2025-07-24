@@ -119,28 +119,98 @@
 # total quantity
 
 
-class Ekart():
-    def __init__(self,name,quantity):
-        self.cart=[]
-        self.cart.append((name,quantity))
-    def add_product(self):
-        print(f"Your Cart!\nItem Name: {self.cart[0][0]}\nQuantity: {self.cart[0][1]}")
-    def remove_from(self,name):
-        if self.cart[0][0] != name:
-            print(f"{name} is not in the list")
-        else: 
+# class Ekart():
+#     def __init__(self,name,quantity):
+#         self.cart=[]
+#         self.cart.append((name,quantity))
+#     def add_product(self,name , Quantity):
+#         # self.cart.append((name,Quantity))
+#         print(f"Your Cart!\nItem Name: {self.cart[0][0]}\nQuantity: {self.cart[0][1]}")             # modify it - after
+#     def remove_from(self,name):
+#         if self.cart[0][0] != name:
+#             print(f"{name} is not in the list")
+#         else: 
             
-            self.cart[0] = (self.cart[0][0],self.cart[0][1]-1)
+#             self.cart[0] = (self.cart[0][0],self.cart[0][1]-1)
             
-            print(self.cart)
-    def count(self):
-        print(f"Total count: {self.cart[0][1]}")
+#             print(self.cart)
+#     def count(self):
+#         print(f"Total count: {self.cart[0][1]}")
 
 
 
-pro1 = Ekart("onion",12)
-pro1.add_product()
-pro1.remove_from("onion")
-pro1.count()
+# pro1 = Ekart("onion",12)
+# pro1.add_product()
+# # pro1.add_product("banana",4)
+# pro1.remove_from("onion")
+# pro1.count()
 
-        
+
+
+# class Student():
+#     institution = "luminar"
+#     def __init__(self,name,place):
+#         self.name = name
+#         self.place = place
+#     def student_info(self):
+#         print(f"Name: {self.name}\nPlace : {self.place}")
+
+# stud1 = Student("manu","kozhikode")
+# stud2 = Student("sanu","kozhikode")
+# stud1.student_info()
+# stud2.student_info()
+# stud1.place = "idukki"
+# print(stud1.place)
+# print(stud2.place)
+# print(Student.institution)        
+# # stud1.institution = "xyz "
+# print(Student.institution)        
+# print(stud1.institution)        
+# print(stud2.institution) 
+# Student.institution = "Luminar Technolab"       
+# print(Student.institution)        
+# print(stud1.institution)        
+# print(stud2.institution)        
+
+
+                                                                         # Methods
+
+# instance method - instance vach aahn fun ne call cheyyuka - self pass cheytha method is instance method
+# class method - no self arguments - no need to call using object
+# static method - other than the instance and class methods - normal methods in a class that  not changing /modifying the class/instance variables. 
+#
+
+
+# for doing both class and instance calling we use decorator @classmethod
+
+class Student():
+    institution = "luminar"   # class variable
+    def __init__(self,name,place):
+        self.name = name # instance variable
+        self.place = place
+    def student_info(self): # instance method
+        print(f"Name: {self.name}\nPlace : {self.place}")
+                                                                    # the defference is self key word
+
+    # def student_info(): # class method
+    #     print(f"Name: {self.name}\nPlace : {self.place}")
+
+
+    @classmethod      # decorator - it changing instance method to class method
+    def change_data(cls): # instance method
+        Student.institution = "Luminar technolab"
+        cls.institution = "xyz"
+        print(cls.institution)
+
+    @staticmethod
+    def greeting():  # static method - no self and no mod in class variable
+        print("hello ...")
+
+
+stud1 = Student("manu","calicut")
+stud1.student_info()
+# Student.student_info() # cant access a class to its method, need obj or self
+Student.change_data() # but here we can because we use decorator
+stud1.change_data()
+Student.greeting()
+stud1.greeting()
