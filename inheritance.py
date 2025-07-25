@@ -84,3 +84,72 @@
 # c2.parent_feature()
 
                                                      # hybrid inheritance - combination of all types
+
+
+# nxt day                                                   - super()  - refering parent obj
+
+                                                           # - super().__init__(a,b) or Person().__init__(self,a,b)
+
+# class Person():
+#     def __init__(self,name, place):
+#         self.name=name 
+#         self.place=place 
+#     def info(self):
+#         print(f"{self.name},{self.place}")
+# class Student(Person):
+#     def __init__(self,roll,sub1,sub2,x1,x2):
+#         self.roll = roll
+#         self.sub1=sub1
+#         self.sub2=sub2
+#         # super().__init__(x1,x2)
+#         Person.__init__(self,x1,x2)
+#     def stud_info(self):
+#         print(f"{self.name}")
+        
+# p1=Person("shu","kkd")
+# st1=Student(56,10,20,"jith","mlp")
+# st1.stud_info()
+# st1.info()
+
+# # op
+
+# jith
+# jith,mlp
+
+
+
+                                                            # Polymorphism - many forms
+
+# same method in defferent form 
+# python violating method overloading for doing that it uses #multipledispatch
+
+# multiple dispatch have @dispatch(int,int) decorator
+
+# we cant use direct @dispatch - we neet to install it using pip 
+# pip install multipledispatch
+
+# from multipledispatch import dispatch
+# @dispatch(int.str) - neet to set datatypes of the argument
+
+# from multipledispatch import dispatch
+# class FindSum:
+#     @dispatch(int,int)
+#     def find_sum(self,a,b):
+#         print(a+b)
+#     @dispatch(int,int,int)
+#     def find_sum(self,a,b,c):
+#         print(a+b+c)
+#     @dispatch(str,str)
+#     def find_sum(self,a,b):
+#         print(a+b)
+
+# f1 = FindSum()
+# f1.find_sum(1,2)
+# f1.find_sum(1,2,3)
+# f1.find_sum("hi ","hello")
+
+# # op
+
+# # 3
+# # 6
+# # hi hello
