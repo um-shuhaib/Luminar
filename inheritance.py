@@ -1,11 +1,13 @@
-'''                                                         Inheritance in OOPs '''
+'''                                                                           Inheritance in OOPs '''
+''' Encapsulation - wrapping up - bundle'''
+
 # single level inheritance
 # multi-level inheritance
 # multiple inheritance
 # hyrarchical inheritance
 # hybrid inheritance
 
-                                                                                # single level inheritance
+'''                                                                                # single level inheritance '''
 
 
 # class Parent:
@@ -24,7 +26,7 @@
 
 
 
-                                                                                 # multilevel inheritance
+'''                                                                                  multilevel inheritance '''
 
 
 # class Gparents:
@@ -46,7 +48,7 @@
 
 
 
-                                                                               # multiple inheritance
+'''                                                                     # multiple inheritance '''
 
 
 # class Mother:
@@ -66,7 +68,7 @@
 # c1.child_features()
 
 
-                                                                          # hyrarchical inheritance
+'''                                                              # hyrarchical inheritance '''
 
 # class Parent:
 #     def parent_feature(self):
@@ -83,10 +85,11 @@
 # c1.parent_feature()
 # c2.parent_feature()
 
-                                                     # hybrid inheritance - combination of all types
+'''                                                     # hybrid inheritance - combination of all types '''
 
 
-# nxt day                                                   - super()  - refering parent obj
+# nxt day  
+'''                                                 - super()  - refering parent obj '''
 
                                                            # - super().__init__(a,b) or Person().__init__(self,a,b)
 
@@ -117,39 +120,3 @@
 # jith,mlp
 
 
-
-                                                            # Polymorphism - many forms
-
-# same method in defferent form 
-# python violating method overloading for doing that it uses #multipledispatch
-
-# multiple dispatch have @dispatch(int,int) decorator
-
-# we cant use direct @dispatch - we neet to install it using pip 
-# pip install multipledispatch
-
-# from multipledispatch import dispatch
-# @dispatch(int.str) - neet to set datatypes of the argument
-
-# from multipledispatch import dispatch
-# class FindSum:
-#     @dispatch(int,int)
-#     def find_sum(self,a,b):
-#         print(a+b)
-#     @dispatch(int,int,int)
-#     def find_sum(self,a,b,c):
-#         print(a+b+c)
-#     @dispatch(str,str)
-#     def find_sum(self,a,b):
-#         print(a+b)
-
-# f1 = FindSum()
-# f1.find_sum(1,2)
-# f1.find_sum(1,2,3)
-# f1.find_sum("hi ","hello")
-
-# # op
-
-# # 3
-# # 6
-# # hi hello

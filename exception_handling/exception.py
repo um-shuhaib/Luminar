@@ -1,4 +1,4 @@
-'''Exceptions'''
+'''                                                                           Exception Handling'''
 
 
 # try: if try except is must
@@ -70,6 +70,30 @@
 
 
 
-'''                                       user defined exception classes'''
+'''                                                              user defined exception classes'''
 
+# create a class name the exception name 
 
+# class ValueLargeError(Exception):  # need to use Exception classs for creatig the exception int the brackets - class ExceptionName(exception):
+#     pass
+# class ValueSmallError(Exception):
+#     pass 
+
+# x = 10
+
+# while True:
+#     n = int(input("Enter the number: "))
+#     try:
+#         if n<x:
+#             raise ValueSmallError
+#         elif n>x:
+#             raise ValueLargeError
+#         else:
+#             print("Correct! ")
+#             break
+#     except ValueSmallError:
+#         print("Value small")
+#     except ValueLargeError:
+#         print("Value Large")
+#     finally:
+#         print("Good PLay")
