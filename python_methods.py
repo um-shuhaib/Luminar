@@ -20,11 +20,14 @@ max()
 
 
 ...............................................................................................#str
+
+
 slicing - string[start:end:step]
 .upper()
 .lower()
 .title() - change every 1st letter to CAPITAL
 .capitalize() - change only first letter to CAPITAL
+.swapcase()
 .islower()
 .isupper()
 len()
@@ -32,7 +35,7 @@ len()
 .lstrip() - removes 1st blank space
 .rstrip() - removes last blank space
 .split()  - s.split(",") - it will seperate words by ,
-.replace() - .replace("from","to",count)
+.replace() - .replace("from","to",count) - no count then all will change
 .ljust() - .ljust(count,"what") - # Good******
 .rjust() - # ******Good
 .center() - # ***Good***
@@ -40,6 +43,7 @@ len()
 .endwith()
 .isnumeric()
 .isalpha()
+.isspace()
 .isalnum()
 .index()
 .find() - returns lowest value
@@ -59,6 +63,8 @@ path in sring
 
 
 ....................................................................................................#list
+mutable,ordered,itereble,duplicate,indexing,slicing, all data types
+
 slicing - # s[-1][0:6] string[select element][start:end]
 .append() - to last 
 .insert() - to specific - insert(pos,what)
@@ -83,12 +89,17 @@ b=a-b
 a=a-b
 
 ..................................................................................................#Dictionary
+mutable,key value pair,no indexing,iterable, no slicing, keys - unique and immutable,values - anthing, no repeated keys, no duplicate
+
+di = dict()
 dict={"key":"value"}
 .get()
+.items() - returns each key:value as tuples in list
 .keys()
 .values()
-.items() - returns each key:value as tuples
-.update() - update("key":"value")
+
+.update() - update("key":"value") - to add and modify
+
 .pop("key") - argument must
 .popitem() - last item will remove and returned
 .clear()
@@ -96,22 +107,33 @@ del name
 
 
 ...................................................................................................#set
+mutable,unordered,no indexing,no slicing, only immutable data types, no duplicates
+
 #no duplicate values
+set1 = set()
+set2 = {1,"hello"} - immutable data only
 set() - for initialising empty set otherwise it will be dic - set = set()
+
 .add() - single values
 .update() - iterable values only
+
 .remove() - if not exist ERROR
 .discard() - no error if not exist
 .pop() - random elements
 .clear()
 del name
+
 .union() - a.union(b)
 .intersection()
 .difference()
 .symmetric_difference()
 
+frozen set - immutable set - cant modify - like keys
+    frozenset() - 
 
 ..................................................................................................#tuple
+immutable,iterable,indexing,slicing,duplicate - same as list but no modification
+
 # () not manditory but COMMA is MANDITORY
 t = (1,2,3)
 t1= 1,2,3    # both are tuple
@@ -120,8 +142,10 @@ t = tuple()  # empty
 t = (10)    #int
 t = (10,)   #tuple    #COMMA is Manditory
 t = 10,     #tuple
+
 .index()
 .count()
+
 ---------# Tuple - packing and unpacking
 a,b,c,d = number 
     # each element in number is assigned to seperate variable a,b,c,d
@@ -131,12 +155,16 @@ a,b,*c,d = t
     #if lots of elements
 
 .........................................................................#functions
+block of codes,exe only when its called, used to code resudability ,def ,snake_case
 
-def fun(*args) - multi value
-def fun(**kwargs) - multi var
+def fun(*args) - multi value - arbitrary arguments
+def fun(**kwargs) - multi var - arbitrary variable 
 
 .........................................................................#recursivefunction
 ........................................................................#lambdaFunction
+only passing single expresssion 
+
+# anonymus function
 
 # lambda (arguments:expression,list)
 map() - gives full result
@@ -172,6 +200,7 @@ __init__.py - in the folder
 '''
 
 ....................................................................#regularExpression
+matching pattern - only stings
 
 # res = re.search(pattern,password) 
 # re.findall(pattern,string) -
@@ -212,5 +241,98 @@ __init__.py - in the folder
 ...................................................................................
 # id() - address
 # dir() - all atributes or methods
+
+
+
+
+
+
+
+
+
+.........................................................scope of a variable
+global
+local
+
+.........................................................pass by value and pass by reference
+
+pass by value - only locally changed
+pass by referece - globally changed datda
+
+# A == a - cheks the value
+# A is a - cheks the obj
+
+
+
+................................iterators
+iter()
+next()
+
+.................................generator
+is func - generates iterators - using yield (can mult yield) instead of return
+returns iterator obj
+get using next()
+
+.................................decorators
+wrapping a func - changing behaviuour without changing the sourse code
+@decorator_name
+
+def my_decorative(func):
+    def wrapper():
+        print("before")
+        func()
+        print("after")
+    return wrapper
+
+@my_decorative
+def fun():
+    print("hello")
+fun()
+
+
+........................docstring
+
+dun().__doc__()
+
+
+.....................................................................................fileOperation
+
+text to binary
+
+open(path,mode) 
+    r,w,a,x,r+,w+,rb,wb
+close()
+read()
+readline() current pointer line
+readlines() all line as list
+write()
+writelines()
+
+
+
+class()
+objext
+inherita
+poly
+abstract
+encapsulation
+cunstructor
+destructor
+self
+super
+types of variable and ,etods
+method overriding and overloading
+
+access specifiers - _,__,___
+
+
+
+
+
+
+
+
+
+
 '''
 

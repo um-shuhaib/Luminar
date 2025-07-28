@@ -157,8 +157,22 @@
 
 
 
-f = open("file_handling/file2.txt","r+")
-print(f.read())
-f.write(" hi daa")
-f.seek(0)
-print(f.read())
+# f = open("file_handling/file2.txt","r+")
+# print(f.read())
+# f.write(" hi daa")
+# f.seek(0)
+# print(f.read())
+
+                                                        # remove
+                                                      # import os
+
+import os
+
+if os.path.exists("file2.txt"):
+    os.remove("file2.txt")
+else:
+    print("no file")
+
+                                                                # rename
+if os.path.exists("file2.txt"):
+    os.rename("file2.txt","newfile.txt")

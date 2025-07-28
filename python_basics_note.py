@@ -1,4 +1,7 @@
-# oops, interpreted, portable, dynamically typed high level programming language
+# oops, interpreted, portable,extended,cross plateform dynamically typed high level programming language
+# guido vann rossom - 1991
+
+
 
 # age = int (input ("hey..Whats your age? :")) 
 # if age >= 18:

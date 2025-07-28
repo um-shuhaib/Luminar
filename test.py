@@ -9,9 +9,14 @@
 
 
 
-num = [("hi",1)]
-print(num)
-num.remove("hi")
-print(num)
+n = [1,2,5,6,6]
+print(n)
+
+big = max(n)
+for i in n:
+    if i == big:
+        n.remove(i)
+        print(n)
+print(max(n))
 
 
