@@ -91,8 +91,9 @@ a=a-b
 ..................................................................................................#Dictionary
 mutable,key value pair,no indexing,iterable, no slicing, keys - unique and immutable,values - anthing, no repeated keys, no duplicate
 
-di = dict()
+dic = dict()
 dict={"key":"value"}
+
 .get()
 .items() - returns each key:value as tuples in list
 .keys()
@@ -161,6 +162,8 @@ def fun(*args) - multi value - arbitrary arguments
 def fun(**kwargs) - multi var - arbitrary variable 
 
 .........................................................................#recursivefunction
+
+
 ........................................................................#lambdaFunction
 only passing single expresssion 
 
@@ -200,7 +203,7 @@ __init__.py - in the folder
 '''
 
 ....................................................................#regularExpression
-matching pattern - only stings
+matching pattern - only strings
 
 # res = re.search(pattern,password) 
 # re.findall(pattern,string) -
@@ -311,19 +314,19 @@ writelines()
 
 
 class()
-objext
-inherita
-poly
+object
+inheritance
+polymorphism
 abstract
 encapsulation
 cunstructor
 destructor
 self
-super
-types of variable and ,etods
+super()
+types of variable and ,methods
 method overriding and overloading
 
-access specifiers - _,__,___
+access specifiers - _ ,_ _,
 
 
 

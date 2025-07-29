@@ -1,22 +1,8 @@
-# import re 
-# num = input("enter the number: ")
-# pattern = "^(\+91[\s|-]?)?([6-9][0-9]{9})$"
-# if re.search(pattern,num):
-#     print("valid")
-# else:
-#     print("invalid")
-
-
-
-
-n = [1,2,5,6,6]
-print(n)
-
-big = max(n)
-for i in n:
-    if i == big:
-        n.remove(i)
-        print(n)
-print(max(n))
-
-
+l = [["hell",30],["hi",25],["beta",50],["alpha",50]]
+# srt = []
+# for i in range(len(l)):
+#     for j in range(len(l)):
+#         if l[j][1] > l[j+1][1]:
+#             l[j][1],l[j+1][1]
+l.sort(key=lambda x:x[1])
+print(l)

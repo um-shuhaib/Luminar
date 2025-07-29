@@ -96,7 +96,10 @@
 # Greater and equal - False
 
 
-'''Encapsulation'''
+'''                                                Encapsulation'''
+
+# _ - protected
+# __ - private
 
 # ristrict modification 
 # self.name is public variable
