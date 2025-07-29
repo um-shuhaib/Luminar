@@ -74,7 +74,7 @@
 # funcappend -  a mode
 # []
 
-'''here first read() reads all texts then the pointer is in the last position then the readlines() is executed, so there is mo text after the cursor'''
+'''here first read() reads all texts then the pointer is in the last position then the readlines() is executed, so there is no text after the cursor'''
 
 # f = open("file2.txt","r")
 # print(f.read(5))                    # secon

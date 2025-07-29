@@ -1254,7 +1254,7 @@
 # set1 = set()   - empty set
 # set2 = {1,2,3}
 
-# l = {1,2,1}
+# l = [1,2,1]
 # s = set(l)                 # we can remove duplicate value of list using SET.
 # print(list(s))
 

@@ -4,7 +4,7 @@
 # hiding ,complex , internal ..... - wher we should apply the encapsulation and abstraction (  atm, beak applying - internallyy not aware, calculator ) - real life example
 
 
-#  from abc import ABC,abstractclassmethod
+#  from abc import ABC,abstractmethod
 
 
 # ABC - Abstract Base Class
