@@ -1,38 +1,12 @@
-# l = [["hell",30],["hi",25],["beta",50],["alpha",50]]
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(i,end=" ")
+    for k in range(i+1,6):
+        print(k,end=" ")
+    print()
 
-# l.sort(key=lambda x:x[1])
-# print(l)
-
-
-# def is_perfect_square(x):
-#     s = 0
-#     while s * s < x:
-#         s += 1
-#     return s * s == x
-
-# def is_fibonacci(n):
-#     # A number is Fibonacci if one of (5*n*n + 4) or (5*n*n - 4) is a perfect square
-#     return is_perfect_square(5 * n * n + 4) or is_perfect_square(5 * n * n - 4)
-
-# # Input from user
-# num = int(input("Enter a number: "))
-
-# if is_fibonacci(num):
-#     print(num, "is a Fibonacci number.")
-# else:
-#     print(num, "is NOT a Fibonacci number.")
-
-
-
-# Output:
-
-# Enter a number: 21
-# 21 is a Fibonacci number.
-
-# Enter a number: 22
-# 22 is NOT a Fibonacci number.
-
-keys = [1,2,3,4,5]
-values = ["one","two","three","four","five"]
-        
-print(list(zip(keys,values)))
+# 1 2 3 4 5
+# 2 2 3 4 5
+# 3 3 3 4 5 
+# 4 4 4 4 5
+# 5 5 5 5 5 
