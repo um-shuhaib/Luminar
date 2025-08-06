@@ -42,3 +42,6 @@ SELECT avg(creditlimit) as avg_credit from customers;
 
 
 SELECT min(creditlimit) as max_credit from customers;
+SELECT customername FROM customers ORDER BY customername;
+
+SELECT customernumber,max(amount) FROM payments GROUP BY customernumber;
