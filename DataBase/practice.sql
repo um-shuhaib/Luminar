@@ -134,5 +134,20 @@ SELECT table1.name,table1.city,table2.name,table2.city FROM table1 RIGHT JOIN ta
 
 /* Practice */
 
-SELECT salesman.name,customer.cust_name,salesman.city FROM salesman JOIN customer ON salesman.city = customer.city; -- 1
-SELECT customer.cust_name,salesman.name FROM customer JOIN salesman ON customer.salesman_id=salesman.salesman_id; -- 3
+SELECT salesman.name,customer.cust_name,salesman.city FROM salesman JOIN customer ON salesman.city = customer.city; 
+SELECT orders.ord_id,orders.purch_amt,customer.cust_name,customer.city FROM orders JOIN customer ON orders.customer_id=customer.customer_id WHERE purch_amt BETWEEN 500 AND 2000 ;
+SELECT customer.cust_name,salesman.name AS salesman FROM customer RIGHT JOIN salesman ON customer.salesman_id=salesman.salesman_id; 
+SELECT customer.cust_name,salesman.name AS salesman,salesman.commission FROM customer RIGHT JOIN salesman ON customer.salesman_id=salesman.salesman_id WHERE salesman.commission > 0.12;
+SELECT customer.cust_name,salesman.name AS salesman FROM customer LEFT JOIN salesman ON customer.salesman_id=salesman.salesman_id ORDER BY customer.cust_name ;
+SELECT customer.cust_name,customer.city,orders.ord_id,orders.ord_date,orders.purch_amt FROM customer LEFT JOIN orders ON customer.customer_id=orders.customer_id ORDER BY orders.ord_date;
+SELECT salesman.name AS salesman,customer.cust_name FROM salesman LEFT JOIN customer ON customer.salesman_id=salesman.salesman_id ORDER BY salesman.name;   -- 7
+
+
+
+/* SELF JOIN */
+
+CREATE TABLE employee1 (emp_id int,emp_name varchar(20),manager_id int);
+INSERT INTO employee1 VALUES (1,"A",2),(2,"B",3),(3,"C",4),(4,"D",1);
+SELECT * FROM employee1;
+SELECT employee.emp_name,manager.emp_name AS manager FROM employee1 AS employee JOIN employee1 AS manager ON employee.emp_id=manager.manager_id;
+SELECT employee.emp_name,manager.emp_name AS manager FROM employee1 AS employee JOIN employee1 AS manager ON employee.manager_id=manager.emp_id;

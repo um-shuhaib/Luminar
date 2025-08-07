@@ -91,15 +91,7 @@ state VARCHAR(20) DEFAULT "Kerala"
 INSERT INTO employee ( employee_name,age,state ) VALUES ( "Shilpa",23,"Tamilnadu" ),( "Aromal",22,"Bangluru" ); 
 
 SHOW COLUMNS FROM employee;
-/*
-MODEL RELATIONSHIP
 
-one to one
-one to many - fk
-many to one - fk
-many to many
-
-*/
 
 /*
 ORDER BY - deafult asc, asc, desc 
@@ -111,3 +103,70 @@ GROUP BY -
 /* NESTED QUARY */
 
 SELECT * from salesman where commission in (select max(commission) from salesman);
+
+/* KEYS */
+
+
+/* STRING METHODS */
+
+SELECT upper("Structured Quary Language");
+SELECT lower("Structured Quary Language");
+SELECT length("  Python");
+SELECT trim("  Python");  -- delete space from both end --like strip in python
+SELECT ltrim("  Python ");
+SELECT rtrim("  Python ");
+SELECT length(trim("  python"));
+SELECT concat("abc"," ","xyz"); -- concatination
+
+
+/* DATE FORMATE */
+
+SELECT current_date(); -- 2025-08-07
+SELECT now(); -- 2025-08-07 12:25:04
+SELECT current_time();
+SELECT current_timestamp();
+SELECT curtime();
+SELECT curdate();
+
+/* FORMATING DATE */
+
+SELECT date_format("2025-08-07","%D"); -- 7th
+SELECT date_format("2025-08-07","%d"); -- 07
+SELECT date_format("2025-08-07","%M"); -- August
+SELECT date_format("2025-08-07","%m"); -- 08
+SELECT date_format("2025-08-07","%Y"); -- 2025
+SELECT date_format("2025-08-07","%y"); -- 25
+
+SELECT adddate("2025-08-07",INTERVAL 10 DAY); -- 2025-08-17
+SELECT adddate("2025-08-07",INTERVAL 10 MONTH); -- 2026-06-07
+
+SELECT datediff("2025-04-07","2025-08-07"); -- -122
+SELECT datediff("2026-04-07","2025-04-07"); -- 365
+
+/* STORED PROCEDURES */
+
+-- delimeter
+delimiter &&
+CREATE PROCEDURE select_detail()
+begin
+SELECT * FROM customer;
+end
+&& delimiter ; 
+
+CALL select_detail();
+
+delimiter &&
+CREATE PROCEDURE select_cust(IN var1 varchar(20))
+begin
+SELECT * FROM employee WHERE state=var1;
+end
+&& delimiter ; 
+
+CALL select_cust("kerala");
+
+drop procedure select_cust;
+
+/* NORMALISATION */
+
+-- 1NF,2NF,3NF,BCNF,5NF,6NF
+
