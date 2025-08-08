@@ -104,8 +104,16 @@ GROUP BY -
 
 SELECT * from salesman where commission in (select max(commission) from salesman);
 
-/* KEYS */
-
+/* KEYS
+	UNIQUE KEY
+	SUPER KEYS
+	PRIMARY KEY
+    FOREIGN KEY
+    CANDIDATE KEY
+    COMPOSITE KEY
+    ALTERNATE KEY
+    
+*/
 
 /* STRING METHODS */
 
@@ -167,6 +175,14 @@ CALL select_cust("kerala");
 drop procedure select_cust;
 
 /* NORMALISATION */
-
+/*anomalies, data redendency*/
 -- 1NF,2NF,3NF,BCNF,5NF,6NF
 
+-- functional dependacy
+/*
+a b c
+a-b 
+b-c then
+a-c
+*/
+-- and partial dependency -- pk alland verey oru col vach mattoru col fetch cheyyan pattaruth
