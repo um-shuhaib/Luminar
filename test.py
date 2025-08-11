@@ -1,12 +1,8 @@
-for i in range(1,6):
-    for j in range(1,i+1):
-        print(i,end=" ")
-    for k in range(i+1,6):
-        print(k,end=" ")
-    print()
-
-# 1 2 3 4 5
-# 2 2 3 4 5
-# 3 3 3 4 5 
-# 4 4 4 4 5
-# 5 5 5 5 5 
+l = [["beta",50],["chi",20],["alpha",50]]
+print(l)
+l.sort(key = lambda x:x[1])
+l.sort()
+sl = l[1]
+for i in l:
+    if i[1] == sl[1]:
+        print(i[0])
