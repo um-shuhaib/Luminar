@@ -1,8 +1,14 @@
-l = [["beta",50],["chi",20],["alpha",50]]
-print(l)
-l.sort(key = lambda x:x[1])
-l.sort()
-sl = l[1]
-for i in l:
-    if i[1] == sl[1]:
-        print(i[0])
+# while ch != 3:
+#     ch = input("1. add 2. delete 3. exit")
+#     if ch == 1:
+#         name = input("enter name :")
+#     elif ch == 2:
+#         name = input("name for delete: ")
+
+
+
+num = list(map(int,input().split()))
+print(num)
+
+
+

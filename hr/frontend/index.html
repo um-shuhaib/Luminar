@@ -1,67 +1,288 @@
 HTML - markup language for creating the structure for web. Tag based language (Markup)
-<br>elements are two types :- 
-    <br>.      . inline and block elements
-    <ol>
-        <li>block elements</li>
-        <ul>
-            <li>heading</li>
-            <li>paragraph</li>
-        </ul>
-        <li>inline elements</li>
-        <ul>
-            <li>italic</li>
-            <li>bold</li>
-            <li>underline</li>
-            <li>anchor</li>
-            <li>image</li>
-        </ul>
-    </ol>
+<br>elements are two types :-
+<br>. . inline and block elements
+<ol>
+    <li>block elements</li>
+    <ul>
+        <li>heading</li>
+        <li>paragraph</li>
+    </ul>
+    <li>inline elements</li>
+    <ul>
+        <li>italic</li>
+        <li>bold</li>
+        <li>underline</li>
+        <li>anchor</li>
+        <li>image</li>
+    </ul>
+</ol>
 <html>
-    <head>
-        <title> Luminar web </title>
 
-    </head>
-    <body>
-        <h1>H1 Heading</h1>
-        <h2>H2 Heading</h2>
-        <h3>H3 Heading</h3>          <!--block-->
-        <h4>H4 Heading</h4>
-        <h5>H5 Heading</h5>
-        <h6>H6 Heading</h6>
-        <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<head>
+    <title> Luminar web </title>
+
+</head>
+
+<body>
+    <h1>H1 Heading</h1>
+    <h2>H2 Heading</h2>
+    <h3>H3 Heading</h3> <!--block-->
+    <h4>H4 Heading</h4>
+    <h5>H5 Heading</h5>
+    <h6>H6 Heading</h6>
+    <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+        it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+        including versions of Lorem Ipsum.</p>
     <!-- comment is like this -->
-     no tag - raw text <br> 
-     <b>Bold Text</b> <br>          <!--inline-->
-     <i>italic text</i> <br> 
-     <u>underline</u>
+    no tag - raw text <br>
+    <b>Bold Text</b> <br> <!--inline-->
+    <i>italic text</i> <br>
+    <u>underline</u>
 
 
-<!-- anchor tag or link tag -->
- <br>
-        <a target="_blank" href="https://www.google.com">Visit Goodle</a>
-        <a href="https://www.flipkart.com">flipkart</a> <!--by default _self (target)-->
+    <!-- anchor tag or link tag -->
+    <br>
+
+    <a target="_blank" href="https://www.google.com">Visit Goodle</a>
+    <a href="https://www.flipkart.com">flipkart</a> <!--by default _self (target)-->
 
 
-<img height="300px" width="300px" src="dad1.png" alt="no image">
-<video height="500px" width="500px" autoplay controls src="hydrpPredict_demo.mp4"></video>
-<!-- marque  -->
-<marquee behavior="slide" direction="right">Breaking News</marquee>
-<marquee behavior="scroll" direction="left">Breaking News</marquee>
-<marquee behavior="alternate" direction="left">Breaking News</marquee>
+    <img height="300px" width="300px" src="dad1.png" alt="no image">
+    <hr>
+    <video height="500px" width="500px" autoplay controls src="hydrpPredict_demo.mp4"></video>
+    <!-- marque  -->
+    <marquee behavior="slide" direction="right">Breaking News</marquee>
+    <marquee behavior="scroll" direction="left">Breaking News</marquee>
+    <marquee behavior="alternate" direction="left">Breaking News</marquee>
 
-<marquee behavior="" direction="">
-    <img src="https://i.pinimg.com/originals/5e/39/66/5e396693912db1b662490d0b68951577.gif" alt="">
-</marquee> <!--cat running-->
+    <marquee behavior="" direction="">
+        <img src="https://i.pinimg.com/originals/5e/39/66/5e396693912db1b662490d0b68951577.gif" alt="">
+    </marquee> <!--cat running-->
 
-<audio src="ground_truth.wav" autoplay controls></audio>
-<audio src="https://audiodemos.github.io/vctk_set0/embedadapt_1sample.wav" autoplay controls></audio>
-
-
+    <audio src="ground_truth.wav" autoplay controls></audio>
+    <audio src="https://audiodemos.github.io/vctk_set0/embedadapt_1sample.wav" autoplay controls></audio>
 
 
-<!-- iframe  -->
+    <!-- list -->
 
+    <!-- ordred list
+unordered list
+definition list -->
+    <h1>un ordered list</h1>
+    <ul type="square">
+        <li>shape 1</li>
+        <li>shape 2</li>
+    </ul>
+
+    <ul type="circle">
+        <li>shape 1</li>
+        <li>shape 2</li>
+    </ul>
+
+    <ul type="disc">
+        <li>shape 1</li> <!--defaullt-->
+        <li>shape 2</li>
+    </ul>
+
+    <h1>ordered list</h1>
+
+    <ol>
+        <li>point 1</li>
+        <li>point 2</li>
+    </ol>
+
+    <ol type="1">
+        <li>point 1</li>
+        <li>point 2</li>
+    </ol>
+
+    <ol type="A">
+        <li>point 1</li>
+        <li>point 2</li>
+    </ol>
+
+    <ol type="a">
+        <li>point 1</li>
+        <li>point 2</li>
+    </ol>
+
+    <ol type="I">
+        <li>point 1</li>
+        <li>point 2</li>
+    </ol>
+
+    <ol type="i">
+        <li>point 1</li>
+        <li>point 2</li>
+    </ol>
+
+    <h3>in between</h3>
+
+    <ol type="1" start="5">
+        <li>point 1</li>
+        <li>point 2</li>
+    </ol>
+
+    <ol type="A" start="3"> <!--starts with C because 3rd letter is C-->
+        <li>point 1</li>
+        <li>point 2</li>
+    </ol>
+    <!--Definition list-->
+    <h1>Definition list</h1>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Htnl is an markup language</dd>
+
+        <dt>CSS</dt>
+        <dd>Css is for styling the web page</dd>
+    </dl>
+
+    <!-- or -->
+    <dl>
+        <ol>
+            <li>
+                <dt>HTML</dt>
+                <dd>it is html</dd>
+            </li>
+
+            <li>
+                <dt>css</dt>
+                <dd>it is css</dd>
+            </li>
+        </ol>
+    </dl>
+
+
+    <!-- Table  -->
+    <h1>Table Creation</h1>
+
+    <table border="1" cellspacing="0" cellpadding="10px" bgcolor="skyblue">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Place</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Shuhaib</td>
+                <td>Malappuram</td>
+                <td>24</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Grand Total</td>
+                <td>15000</td>
+
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- form creation  -->
+
+    <h1>Form creation</h1>
+    <!-- methods - post, get:by default, patch, put, delete -->
+    <form action="submit.html" method="post" enctype="multipart/form-data" target="_blank">
+        <!-- target for action same tab lu veno -->
+        <!-- encrypt for when uses of file/uploads  -->
+        <!--submit clickiya submit.html work aakm-->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <!-- normal input text, number, password, email  -->
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" required> <br>
+            <label for="secondname">Second Name</label>
+            <input type="text" id="secondname"> <br>
+            <label for="age">Age</label>
+            <input type="number" id="age" value="10"> <br> <!--value for default or place holder and this value is updated to the db-->
+            <label for="password">Password</label>
+            <input type="password" id="password"> <br>
+            <label for="email">E-mail</label>
+            <input type="email" id="email"> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Informations</legend>
+            <!-- radio button  -->
+
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="male"> <!--name must be same -->
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female">
+            <label for="fmale">Female</label>
+            <input type="radio" name="gender" value="other">
+            <label for="other">Other</label> <br>
+
+            <!-- text aria -->
+
+            <label for="address">Address</label>
+            <textarea cols="10" rows="10"></textarea> <br>
+
+            <!-- date,time, month  -->
+            <label for="dob">Date Of Birth</label>
+            <input type="date"> <br>
+
+            <label for="time">Time</label>
+            <input type="time"> <br>
+
+            <label for="month">Month</label>
+            <input type="month"> <br>
+
+            <!-- colour pick  -->
+            <label for="color">COlours</label>
+            <input type="color"> <br>
+
+        </fieldset>
+        <!--fieldset is used to group the elemnts-->
+        <fieldset>
+            <legend>Last Step</legend>
+            <!-- select options  -->
+            <label for="state">Select your state</label>
+            <select>
+                <option value="" selected disabled>--selected--</option>
+                <option value="kerala">Kerala</option>
+                <option value="karnadaka">Karnadaka</option>
+                <!--value is used for when clicking the button what value need to go to the db, the value desides what to send to db-->
+                <option value="tamilnadu">Tamilnadu</option>
+            </select> <br>
+
+            <!-- check box  -->
+            <label for="skills">Skils</label>
+            <input type="checkbox"><label for="python">Python</label>
+            <input type="checkbox"><label for="django">Django</label> <br>
+
+            <!-- file  uploads  -->
+            <label for="file">Uploads</label>
+            <input type="file"> <br> <!--must be encripted - need to use xtra encryption type-->
+
+        </fieldset>
+
+        <fieldset>
+            <legend>another list</legend>
+            <input type="text" list="skills">
+
+            <datalist id="skills">
+                <option value="python"></option>
+                <option value="django"></option>
+                <option value="react"></option>
+
+            </datalist>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Submit"> <!--in js-->
+        <!--<input type="submit" value="Submit">--> <!--form submission-->
+        <!-- <input type="reset" value="reset">  -->
+
+    </form>
 
 
 </body>
+
 </html>
