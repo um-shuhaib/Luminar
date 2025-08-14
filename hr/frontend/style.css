@@ -1,0 +1,20 @@
+                                            /* combinators:  */
+/* descendand selector  
+div p{
+    background-color: aqua;
+} */
+
+/* child selector
+div>p{
+    background-color: aqua;
+} */
+
+/* adjacent sibling
+div+p{
+    background-color: aqua;
+} */
+
+/* general sibling
+div~p{
+    background-color: aqua;
+} */

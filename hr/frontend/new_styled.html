@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Learn</title>
+    <style>
+        /* selector{
+            property:value
+        } */
+        h2 {
+            color: green;
+            /* border: width style color; */
+            border: 2px dashed red;
+            padding: 10px 35% 10px 35%;
+            background-color: #ffffff;
+        }
+
+        #head1 {
+            color: blue;
+            border: 2px dotted red;
+            /* <!--for changing priority u can use !important--> */
+        }
+
+        #head2 {
+            color: yellow;
+            border: 2px solid green;
+        }
+
+        .para {
+            color: aqua;
+            border: 2px dashed brown;
+        }
+
+        div {
+            height: 300px;
+            width: 300px;
+            background-color: antiquewhite;
+            
+        }
+        html{
+            background-color: burlywood;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1
+        style="color: red; background-color: rgb(180, 127, 255); border-width: 2px; border-color: blue; border-style: solid; padding: 100px 600px 100px; ">
+        Cascading Style Sheet</h1>
+    <!-- <h1 style="color: rgb(0, 0,255); background-color: aquamarine; " >Cascading Style Sheet</h1>
+    <h1 style="color: #000000; background-color: aquamarine; " >Cascading Style Sheet</h1>
+    <h1 style="color: hsl(180, 50%, 50%); background-color: aquamarine; " >Cascading Style Sheet</h1> -->
+    <h2>Second Header For internal css</h2>
+    <h2 id="head1">Second Header For internal css</h2>
+    <h2 id="head2">Second Header For internal css</h2>
+    <ol>
+        <li>Inline css</li>
+        <li>Internal css</li>
+        <li>External css</li>
+    </ol>
+    <p id="head1">We can use <b>!important </b> to prioratise the style</p>
+    <p class="para">For grouping the style we can use <b>ID</b> and <b>CLASS.</b></p>
+    <h3 class="para">This is an heading and has same class of above para</h3>
+    <!-- color types
+    color name - red,blue etc
+    rgb - rgb(rrr,ggg,bbb) - rgb(0,0,0) to rgb (255,255,255) - when using color picker
+    rgba - rgba(rrr,ggg,bbb,ooo) - rgba(255,0,0,0) - 4th one is oppasity - if it is 0 then no color  like blur effect
+    hexa - #rrggbb - #000000 black - #ffffff white 
+    hsl - hsl(degree,per cent,per cent) - hsl(180,50%,50%) 
+    hsla - hsla(degree,per cent,per cent,oppasity) - hsl(180,50%,50%,100%) 
+    -->
+    <h1>Container Tags</h1>
+
+    <div> <!--block element-->
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta similique accusantium dolorem fuga, autem
+            modi possimus dignissimos quasi facilis nostrum enim distinctio earum ullam quos maiores! Voluptates omnis
+            quaerat dolores.</p>
+    </div>
+    <div> <!--block element-->
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta similique accusantium dolorem fuga, autem
+            modi possimus dignissimos quasi facilis nostrum enim distinctio earum ullam quos maiores! Voluptates omnis
+            quaerat dolores.</p>
+    </div>
+    <div> <!--block element-->
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta similique accusantium dolorem fuga, autem
+            modi possimus dignissimos quasi facilis nostrum enim distinctio earum ullam quos maiores! Voluptates omnis
+            quaerat dolores.</p>
+    </div>
+    
+    <div>
+        <h1>git</h1>
+        <ul>
+            <li>git init</li>
+            <li>git config --global user.name "userName"</li>
+            <li>git config --global user.email "your.email@example.com"</li>
+            <li>git add file1,file2  -or- -A</li>
+            <li>git status</li>
+            <li>git commit -m "message"</li>
+            <li>git remote add origin repo_link</li>
+            <li>git push origin master</li>
+            <li>git pull</li>
+            <li>git clone repo_link</li>
+        </ul>
+    </div>
+</body>
+
+</html>

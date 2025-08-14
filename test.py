@@ -7,8 +7,10 @@
 
 
 
-num = list(map(int,input().split()))
-print(num)
+mn = list(map(int,input().split()))
+m,n = mn[0],mn[1]
+
+print(m)
 
 
 
