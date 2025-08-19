@@ -1,0 +1,36 @@
+body{
+    background-image: url(https://c0.wallpaperflare.com/preview/697/898/445/cloud-computing-illustration-technology.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+h2{
+    text-align: center;
+    color: grey;
+}
+#container{
+    width: 80%;
+    background-color: rgb(235, 235, 235);
+    margin:0px 10%;
+    
+
+}
+label{
+    float: right;
+}
+
+#button{
+    color:aliceblue;
+    background-color: rgb(13, 110, 253);
+    margin: 0px 45%;
+    
+}
+*{
+    color: rgb(85, 85, 85);
+    padding: 5px;
+}
+

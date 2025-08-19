@@ -27,7 +27,7 @@ UPDATE student SET place = "Idukki" WHERE id = 3;  /* WHERE is manditory, else e
 
 /* ALTER */
 
-/* ALTER TABLE tablename ADD/MODIFY/DROP cols */
+/* ALTER TABLE tablename ADD/MODIFY/DROP/RENAME cols */
 
 ALTER TABLE student ADD email varchar(20);
 SHOW COLUMNS FROM student;

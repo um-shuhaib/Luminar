@@ -15,8 +15,16 @@ UNIQUE KEY
  INSERT INTO demo_table (name) VALUES ("x"),("y");
  SELECT * FROM demo_table;
  DROP TABLE demo_table;
- DELETE FROM demo_table WHERE id=2;
+ DELETE FROM demo_table WHERE id=4;
  TRUNCATE TABLE demo_table;
+ 
+ -- copy a table 
+ 
+ CREATE TABLE copytable LIKE demo_table;
+ SELECT * from copytable;
+ SHOW COLUMNS FROM copytable;
+INSERT INTO copytable SELECT * FROM demo_table;
+ 
  
  /*
  DROP - complete table

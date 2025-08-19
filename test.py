@@ -7,10 +7,12 @@
 
 
 
-mn = list(map(int,input().split()))
-m,n = mn[0],mn[1]
+# mn = list(map(int,input().split()))
+# m,n = mn[0],mn[1]
 
-print(m)
+# print(m)
 
 
-
+# cloning a table
+# create table newtable like oldtable ;
+# insert into newtable select * from oldtable;

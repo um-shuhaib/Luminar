@@ -18,3 +18,58 @@ div+p{
 div~p{
     background-color: aqua;
 } */
+
+/* pseudo class */
+a:link{ /* unvisited link color */
+    color: red;
+}
+a:visited/* visited link color */{
+    color: green;
+}
+a:active{ /* color when clicking */
+    background-color: aqua;
+}
+a:hover{ /* color when hover */
+    background-color: blueviolet;
+ }/*
+img{
+    opacity: 0.5;
+}
+img:hover{
+    opacity: 1;
+    border: 1px solid black;
+    border-radius: 30px;
+    
+} */
+
+
+/* pseudo elements */
+p::first-line{
+    color: green;
+}
+p::first-letter{
+    font-size: xx-large;
+    color: red;
+}
+p::before{
+    content: "Before ";
+
+}
+p::after{
+    content: " After😊";
+}
+/* universal selector  */
+
+*{
+    color: brown;
+}
+body{
+    background-image: url(https://media.gettyimages.com/id/1433485090/video/dots-makes-global-world-map-global-wireframe-polygonal-lines.jpg?s=640x640&k=20&c=6TpfX8QHt9IPnF0s5HkwOaNoqcNbtYP99Ceh7-iR8MI=);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    float: right;
+}
