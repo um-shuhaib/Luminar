@@ -13,18 +13,18 @@
     <div id="container">
         <form action="">
             <h2>Let us know how we are improve</h2>
-            <table>
+            <table >
                 <tr>
                     <td><label for="*Name">*Name</label></td>
-                    <td><input type="text" placeholder="Enter Your Name"></td>
+                    <td><input required type="text" placeholder="Enter Your Name"></td>
                 </tr>
                 <tr>
                     <td><label for="*Email">*Email</label></td>
-                    <td><input type="email" placeholder="Enter Your Email"></td>
+                    <td><input required type="email" placeholder="Enter Your Email"></td>
                 </tr>
                 <tr>
                     <td><label for="*Age">*Age</label></td>
-                    <td><input type="number" name="" id=""></td>
+                    <td><input required type="number" name="" id=""></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -34,15 +34,15 @@
                     <td><label for="current role">Which option best describes your current role?</label></td>
                     <td><select name="role" id="role">
                         <option  selected value="Student">Student</option>
-                        <option value="Student">Student</option>
-                        <option value="Student">Student</option>
+                        <option value="Student">Employee</option>
+                        <option value="Student">Teacher</option>
                     </select></td>
                 </tr>
                 <tr>
                     <td><label for="">*How likely is that you would recomment this program to a friend?</label></td>
-                    <td><input type="checkbox" name="Definitely" id="recomment">Definitely <br>
-                        <input type="checkbox" name="Maybe" id="recomment">Maybe <br>
-                        <input type="checkbox" name="Not Sure" id="recomment">Not Sure
+                    <td><input required type="radio" name="recomment" id="recomment">Definitely <br>
+                        <input  type="radio" name="recomment" id="recomment">Maybe <br>
+                        <input type="radio" name="recomment" id="recomment">Not Sure
                     </td>
                 </tr>
                 <tr>
@@ -50,8 +50,8 @@
                     <td><select name="likes" id="role">
                         <option selected disabled value="select">Select an option</option>
                         <option value="classes">Classes</option>
-                        <option value="classes">Classes</option>
-                        <option value="Student">Student</option>
+                        <option value="classes">Free Hour</option>
+                        <option value="Student">Lunch</option>
                     </select></td>
                 </tr>
                 <tr>
