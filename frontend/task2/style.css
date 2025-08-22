@@ -1,0 +1,215 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* #container {
+    padding: 0 10px 10px 10px;
+    position: relative;
+    
+    
+    float: left;
+    display: flex;
+     width: 100%;
+} */
+
+#left-div {
+    width: 20%;
+    
+    height: 100vh;
+    background-color: rgb(20, 76, 144);
+    background-attachment: fixed;
+    
+    display: block;
+    position: fixed;
+
+    padding-top: 70px;
+}
+
+#right-div {
+    /* width: 100vh; */
+    display: grid;
+    row-gap: 30px;
+    margin-left: 20%;
+    padding: 0px 20px;
+    grid-template-columns: auto;
+    height: 100%;
+    left: 20%;
+    
+    background-color: white;
+
+}
+
+#image {
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: contain; */
+
+    background-image: url(https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg);
+}
+
+#welcome {
+    width: 100%;
+
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 30% auto;
+    column-gap: 20px;
+    width: 100%;
+}
+
+#about-left {
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg);
+}
+#about-left:hover{
+    opacity: 1;
+}
+
+#about-right {
+    width: 100%;
+}
+
+#gallery {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    grid-template-columns: auto auto auto auto auto;
+}
+
+
+#pic-1 {
+    
+    opacity: 0.5;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://images.pexels.com/photos/8064882/pexels-photo-8064882.jpeg);
+}
+#pic-1:hover{
+    opacity: 1;
+}
+#pic-2 {
+    opacity: 0.5;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://images.pexels.com/photos/265072/pexels-photo-265072.jpeg);
+}
+
+#pic-2:hover{
+    opacity: 1;
+}
+#pic-3 {
+    opacity: 0.5;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://images.pexels.com/photos/1749303/pexels-photo-1749303.jpeg);
+}
+#pic-3:hover{
+    opacity: 1;
+}
+
+#pic-4 {
+    opacity: 0.5;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://images.pexels.com/photos/2116094/pexels-photo-2116094.jpeg);
+}
+#pic-4:hover{
+    opacity: 1;
+}
+#pic-5 {
+    opacity: 0.5;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/842545/pexels-photo-842545.jpeg);
+}
+  #pic-5:hover{
+    opacity: 1;
+}
+#logo {
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#menu {
+    /* width: 100%; */
+    display: grid;
+    justify-content: center;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover {
+    color: rgb(87, 200, 42);
+}
+
+#title {
+    color: white;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    font-size: 22px;
+    
+    
+}
+
+.heading {
+    color: rgb(16, 123, 165);
+}
+.heading:hover{
+    color: green;
+}
+
+button {
+    background-color: rgb(16, 123, 165);
+    color: white;
+    font-size: x-large;
+    border-radius: 10px;
+    border-color: rgb(16, 123, 165);
+}
+button:hover{
+    /* background-color:  rgb(17, 77, 101); */
+    background-color: green;
+}
+p{
+    color: gray;
+}
+p:hover{
+    color: black;
+}

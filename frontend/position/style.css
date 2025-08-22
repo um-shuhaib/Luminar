@@ -64,7 +64,15 @@
 
     align-items: center;
     /* flex-wrap: wrap; nxt line lu alin cheyyum */
-    /* flex-wrap: wrap; same line lu alin cheyyum */
+    /* flex-wrap: nowrap; same line lu alin cheyyum */
+}
+#grid-main{
+    height: 900px;
+    width: 100%;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 0px;
 }
 #flex-box1{
     width: 100px;
@@ -91,3 +99,4 @@
     height: 100px;
     background-color: aquamarine;
 }
+
