@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            animation-name: box;
+            animation-duration: 5s;
+
+        }
+        @keyframes box{
+            from{background-color: aqua;}
+            to{background-color: black;}
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            background-color: aliceblue;
+            animation-name: box2;
+            animation-duration: 5s;
+        }
+        @keyframes box2{
+            0%{background-color: aliceblue;position: relative;top: 0px;left: 0px;}
+            25%{background-color: rgb(230, 12, 12);position: relative;top: 0px;left: 0px;}
+            50%{background-color: rgb(211, 13, 233);position: relative;top: 0px;left: 100px;}
+            75%{background-color: rgb(16, 122, 214);position: relative;top: 100px;left: 100px;}
+            95%{background-color: rgb(52, 225, 9);position: relative;top: 100px;left: 0px;}
+            100%{background-color: rgb(225, 189, 9);position: relative;top: 0px;left: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+    </div>
+    <div id="div2"></div>
+    
+</body>
+</html>
