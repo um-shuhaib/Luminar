@@ -1,0 +1,221 @@
+#container{
+    display: grid;
+    grid-column: auto;
+    row-gap: 40px;
+
+}
+#nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    z-index: 999;
+}
+#nav-menu{
+    width: 50%;
+    display: flex;
+    /* background-color: blue; */
+    float: left;
+    
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+
+}
+#nav-menu button,select{
+    border: 0px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 15px;
+margin: 0 0 5px 0;
+
+}
+#nav-menu button:hover,select:hover{
+    background-color: rgb(154, 134, 21);
+    color: white;
+}
+li{
+    padding-left: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* li a:hover{
+    background-color: green;
+    color: white;
+} */
+#nav-social{
+    width: 50%;
+    /* background-color: aqua; */
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 15px;
+}
+#nav-social i{
+    padding-right: 20px;
+    
+}
+#nav-social i:hover{
+    /* background-color: grey; */
+color: rgb(154, 134, 21);
+}
+
+#flood{
+    width: 100%;
+    height: 1000px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+#flood img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    
+    
+}
+#flood-center{
+    padding: 30px;
+    width: 500px;
+    /* height: 500px; */
+    display: grid;
+    grid-template-columns: auto;
+    /* justify-content: center; */
+    text-align: center;
+    background-color: white;
+    /* background-color: rgba(255,255,255,0.8); */
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+}
+#flood-center-button {
+    margin: 0px 150px;
+    padding: 20px;
+    border-color: rgb(136, 120, 33);
+
+
+    background-color: white;
+    color: rgb(154, 134, 21);
+}
+#flood-center-button:hover{
+    background-color: rgb(136, 120, 33);
+    color: white;
+}
+#flood-center h1,h2{
+    align-items: center;
+}
+#main{
+    width: 100%;
+    height: 1000px;
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: 70% 30%;
+    column-gap: 5px;
+
+}
+#main-left{
+    /* background-color: rgb(18, 200, 39); */
+    width: 95%;
+    /* height: 70%; */
+    display: grid;
+    grid-template-columns: auto;
+
+
+}
+#main-right{
+    width: 95%;
+    height: 100%;
+    /* background-color: burlywood; */
+    column-gap: 5px;
+    display: grid;
+    grid-template-columns: auto;
+    border: 1px solid rgb(136, 120, 33);
+}
+#main-left-header{
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+    /* justify-content: center; */
+    text-align: center;
+    /* height: 100px; */
+    background-color: white;
+}
+#main-left-pic{
+    width: 100%;
+    /* height: 100%; */
+    /* background-image: url(image/girl.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-color: yellow;
+
+}
+#main-left-pic img{
+    width: 100%;
+    height: 100%;
+}
+#main-left-para{
+    width: 100%;
+    font-style: italic;
+    /* height: 100px; */
+    /* background-color: violet; */
+}
+.main-right-title{
+    width: 100%;
+    height: 65px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#main-right-profile{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+#main-right-profile img{
+    /* height: 100%; */
+    width: 70%;
+    border-radius: 30px;
+    margin: auto;
+}
+#main-right-para{
+    font-style: italic;
+    display: flex;
+    text-align: center;
+    margin: 20px;
+}
+#main-right-signature{
+    display: grid;
+    text-align: center;
+}
+#main-right-signature p{
+    font-family:fantasy ;
+}
+#main-right-social{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-right-social i{
+    padding: 20PX;
+    
+}
+#main-right-social i:hover{
+    color:rgb(136, 120, 33);
+}
