@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <button class="btn btn-outline-primary m-2" data-bs-toggle="collapse" data-bs-target="#hide">show/hide</button>
+    <div id="hide" class="collapse">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, consequatur necessitatibus pariatur sed
+            sapiente animi quia voluptas repellat quo quibusdam nemo inventore amet et maiores sint, voluptatem
+            temporibus praesentium ratione.</p>
+    </div>
+    <hr>
+    <div id="hey" class="dropdown">
+        <button class="btn btn btn-primary" data-bs-toggle="dropdown">dropdown</button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item">item1</li>
+            <li class="dropdown-item">item1</li>
+            <li class="dropdown-item">item1</li>
+            <li class="dropdown-item">item1</li>
+        </ul>
+    </div>
+    <hr>
+
+    <div class="alert alert-success alert-dismissible">
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+        <span>success</span>
+    </div>
+    <hr>
+
+    <!-- <ul class="nav justify-content-center"> -->
+    <ul class="nav justify-content-end">
+
+        <li class="nav-item">
+            <a class="nav-link" href="">home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">service</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">about us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">contact</a>
+        </li>
+    </ul>
+    <hr>
+    <ul class="nav flex-column  ">
+
+        <li class="nav-item">
+            <a class="nav-link" href="">home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">service</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">about us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">contact</a>
+        </li>
+    </ul>
+    <hr>
+    <ul class="nav nav-pills  nav-justified">
+
+        <li class="nav-item  ">
+            <a class="nav-link active" href="#">home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">service</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">about us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">contact</a>
+        </li>
+    </ul>
+    <hr>
+    <ul class="nav  nav-tabs ">
+
+        <li class="nav-item">
+            <a class="nav-link active" href="">home</a>
+        </li>
+        <li class="nav-item dropdown dropend">
+            <!-- <li class="nav-item dropdown dropup"> -->
+
+            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">service</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                    <h4 class="dropdown-header">header</h2>
+                </li>
+                <li class="dropdown-item">link 1</li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li class="dropdown-item">link 1</li>
+                <li class="dropdown-item">link 1</li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">about us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">contact</a>
+        </li>
+    </ul>
+    <hr>
+
+
+    <!-- pop up  - modal-->
+
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Modal</button>
+
+    <div class="modal" data-bs-backdrop="static" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <label for="" class="form-label">username</label>
+                        <input type="text" class="form-control">
+                        <label for="" class="form-label">passwprd</label>
+                        <input type="password" class="form-control">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success " data-bs-dismiss="modal">save</button>
+                    <button class="btn btn-danger " data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- navbar  -->
+
+    <!-- 
+<nav class="navbar bg-info text-light  navbar-expand-md justify-content-left">
+    <div class="navbar-brand">
+       <a href="">
+         <img src="../frontend/dad1.png" alt="" class="rounded-circle " width="50px">
+       </a>
+
+    </div>
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a href="" class="nav-link">home</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">home</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">home</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">home</a>
+        </li>
+
+    </ul>
+
+
+</nav>
+<hr> -->
+    <!-- collapse nav botton -->
+    <nav class="navbar bg-dark navbar-dark  navbar-expand-md">
+        <div class="navbar-brand">
+            <a href="">
+                <img src="../frontend/dad1.png" alt="" class="rounded-circle " width="50px">
+            </a>
+        </div>
+        <!-- new -->
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <!-- new div  -->
+        <div class="collapse navbar-collapse" id="collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link">home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">service</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">about</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+<hr>
+<nav class="navbar bg-dark navbar-dark sticky-top navbar-expand-md">
+        <div class="navbar-brand">
+            <a href="">
+                <img src="../frontend/dad1.png" alt="" class="rounded-circle " width="50px">
+            </a>
+        </div>
+        <!-- new -->
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <!-- new div  -->
+        <div class="collapse navbar-collapse" id="collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link"><i class="fa-solid fa-house"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"><i class="fa-solid fa-bell-concierge"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"><i class="fa-solid fa-address-card"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"><i class="fa-solid fa-address-book"></i></a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+<!-- carosoul  -->
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="../frontend/task3/image/girl.jpg" class="d-block w-100" alt="../frontend/task3/image/girl.jpg">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="../frontend/task3/image/girl.jpg" class="d-block w-100" alt="../frontend/task3/image/girl.jpg">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../frontend/task3/image/girl.jpg" class="d-block w-100" alt="../frontend/task3/image/girl.jpg">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
