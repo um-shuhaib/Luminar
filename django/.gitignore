@@ -1,0 +1,32 @@
+# Virtual Environment
+venv/
+env/
+.env/
+
+# Database Files
+*.sqlite3
+
+# Media and Static Files
+media/
+static_collected/
+
+# Python-specific files
+*.pyc
+__pycache__/
+.Python/
+
+# IDE and Editor-specific files
+.idea/
+.vscode/
+*.swp
+*.bak
+
+# Log Files
+*.log
+
+# Local Settings (if applicable)
+local_settings.py
+
+# Pipenv/Poetry Lock Files (Optional - include based on preference)
+# Pipfile.lock
+# poetry.lock

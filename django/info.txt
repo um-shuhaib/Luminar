@@ -1,0 +1,20 @@
+pip install virtualenv
+virtualenv env / py -m virtualenv env
+activate env: env\Scripts\activate
+pip install django
+djangi-admin startproject "p_name"
+cd "p_name"
+py manage.py startapp "name"
+py manage.py runserver
+
+ORM- object relation mapper
+
+MVC
+MVT - Model View Template : authentication/authorisation
+
+admin interface - CRUD 
+security
+sql injuction
+cross site attack
+
+
