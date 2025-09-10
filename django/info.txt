@@ -18,3 +18,16 @@ sql injuction
 cross site attack
 
 
+{% load static %} - like import
+
+url - {% static 'style.css' %}
+url - {% static 'css/style.css' %}
+
+
+py manage.py createsuperuser
+username
+email
+pass
+re-pass
+confirm
+
