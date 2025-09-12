@@ -31,3 +31,8 @@ pass
 re-pass
 confirm
 
+_ModelName_.objects.all()
+
+in admin model: from app.nodels import Student
+
+admin.site.register(Student)
