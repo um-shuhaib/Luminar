@@ -22,6 +22,8 @@ urlpatterns = [
     # path("home",views.home),
     path('',views.homeView.as_view(),name="homeview"),
     path("register",views.StudentRegister.as_view(),name="registerview"),
-    path("delete/<int:id>",views.deletestudent.as_view(),name="deletestudent")
+    path("delete/<int:id>",views.deletestudent.as_view(),name="deletestudent"),
+    path("update/<int:id>",views.updatestudent.as_view(), name="updatestudent"),
+    
 
 ]
