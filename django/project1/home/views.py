@@ -1,20 +1,36 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.views import View
 from django.contrib.auth.models import User
+from .models import Student
 # class based and function based 
 # Create your views here.
-def home(request):
-    # return HttpResponse("Hello")
-    return HttpResponse("<h2>hellooooooo</h2>")
+# def home(request):
+#     # return HttpResponse("Hello")
+#     return HttpResponse("<h2>hellooooooo</h2>")
 
-def register(request):
-    student = ["Njanan","Neelima","Aromal"]
-    return render(request,'register.html',{"user":student})
+# def register(request):
+    
+#     return render(request,'register.html')
 
     # class view 
 
 class homeView(View):
     def get(self,request):
-        users = User.objects.all()
+        users = Student.objects.all()
         return render(request,'home.html',{"users":users})
+    
+class StudentRegister(View):
+    def get(self,request):
+        return render(request,'register.html')
+    
+    def post(self,request):
+        print(request.POST) #{as dictionary}
+        name=request.POST.get("name")
+        place=request.POST.get("place")
+        age=request.POST.get("age")
+        email=request.POST.get("email")
+        phone=request.POST.get("phone")
+        print(name,age,place,email,phone)
+        Student.objects.create(name=name,place=place,age=age,email=email,phone=phone)
+        return redirect("homeview")

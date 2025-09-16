@@ -36,3 +36,5 @@ _ModelName_.objects.all()
 in admin model: from app.nodels import Student
 
 admin.site.register(Student)
+
+render,redirect("_name_of the path")
