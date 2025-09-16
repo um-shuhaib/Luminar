@@ -24,6 +24,7 @@
   <body class="d-flex flex-column vw-100 vh-100 align-items-center justify-content-center">
     <table class="table-bordered table-striped table">
         <tr>
+            <th>sl.no</th>
             <th>id</th>
             <th>name</th>
             <th>place</th>
@@ -34,6 +35,7 @@
         </tr>
         {% for i in users %}
             <tr>
+                <td>{{forloop.counter}}</td>
                 <td>{{i.id}}</td>
                 <td>{{i.name}}</td>
                 <td>{{i.place}}</td>
