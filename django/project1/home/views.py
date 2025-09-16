@@ -34,3 +34,10 @@ class StudentRegister(View):
         print(name,age,place,email,phone)
         Student.objects.create(name=name,place=place,age=age,email=email,phone=phone)
         return redirect("homeview")
+    
+class deletestudent(View):
+    def get(self,request,**kwargs):
+        stud_id=kwargs.get("id")
+        student=Student.objects.get(id=stud_id)
+        student.delete()
+        return redirect("homeview")
